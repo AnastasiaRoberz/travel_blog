@@ -60,14 +60,36 @@
 }
 
 
-html {
+* {
     font-size: 16px;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    position: relative;
-    scroll-behavior: smooth;
+h1 {
+  font-family: 'Arima';
+  font-weight: 700;
+  color: var(--braun);
+}
+
+h2 {
+  font-family: 'Arima';
+  font-weight: 700;
+  color: var(--türkis);
+}
+
+h3 {
+  font-family: 'Arima';
+  font-weight: 700;
+  color: var(--gelb);
+}
+
+h4 {
+  font-family: 'Arima';
+  font-weight: 600;
+  color: var(--braun);
+}
+
+p {
+  font-family: 'Palanquin';
+  font-weight: 400;
+  color: var(--grau);
 }
