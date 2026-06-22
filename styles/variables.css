@@ -5,4 +5,7 @@
   --türkis: rgb(78, 164, 135);
   --türkisLight: rgba(78, 164, 135, 0.2);
   --grau: rgb(61, 61, 61);
+
+  /* PADDINGS */
+  --contentbegrenzung: 0px max(calc(8.93% - 8.57px), 16px);
 }
