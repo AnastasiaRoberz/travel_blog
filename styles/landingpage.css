@@ -9,9 +9,12 @@
 }
 
 .yellow_swirl {
-    background-image: url(../assets/png/Vector\ 17.png);
-    background-repeat: no-repeat;
+    width: 220px;
     height: 300px;
+    background-color: rgba(241, 201, 83, 1);
+    /* background-image: url(../assets/png/Vector\ 17.png);
+    background-repeat: no-repeat;
+    height: 300px; */
 }
 
 .yellow_swirl img {
