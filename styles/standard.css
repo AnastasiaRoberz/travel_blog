@@ -11,3 +11,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+body {
+    padding-bottom: 8px; /* damit die Nav-Bar unten den Body-Inhalt nicht verdeckt */
+}
