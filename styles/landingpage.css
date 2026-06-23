@@ -117,13 +117,11 @@
     }
     footer {
         background: var(--türkis);
-        height: 134px;
-        
-        display: flex;
-        flex-direction: row;
+        height: 134px;        
+        display: flex;       
         justify-content: space-between;
-        gap: 27px;
-        padding: 25px 24px;
+       align-items: center;
+        padding: 30px 20px;
         .paragraph_text{
             color: white;
         }
@@ -143,8 +141,9 @@
         .social_media_logo {
             display: flex;
             justify-content: space-between;
-            gap: 16px;
-           padding-top: 55px;
+        width: 45%;
+           padding-top: 80px;
+           padding-bottom: 30px;
             img {
                 height: 24px;
                 width: 24px;
