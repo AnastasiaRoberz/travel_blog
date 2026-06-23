@@ -5,4 +5,8 @@
   --türkis: rgb(78, 164, 135);
   --türkisLight: rgba(78, 164, 135, 0.2);
   --grau: rgb(61, 61, 61);
+
+  /* PADDINGS */
+  --contentbegrenzung-landing-page: 0px max(calc(8.93% - 8.57px), 20px);
+  --contentbegrenzung-articles: 0px max(calc(9.86% - 21.97px), 15px);
 }
