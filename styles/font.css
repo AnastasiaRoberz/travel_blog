@@ -108,3 +108,24 @@ p {
   font-weight: 400;
   color: var(--grau);
 }
+ol{
+   font-family: 'Palanquin';
+}
+.p_for_author_bold{
+  font-family: Arima;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+letter-spacing: 0%;
+text-align: center;
+}
+.p_for_author_light{
+font-family: Arima;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+
+}
