@@ -24,7 +24,7 @@ color: var(--braun);
 }
 ol{
 text-align: justify;
-padding:0px 15px;
+padding:0px 15px 24px 15px;
 color: var(--braun);
 }
 .padding_top{
@@ -33,21 +33,6 @@ color: var(--braun);
 .padding_bottom{
        padding-bottom: 24px;
 }
-.author_card{
-    background-color: var(--türkisLight);
-    max-height: 350px;
-    padding: 16px 8px;
-   text-align: center;
-    border-radius: 30px;
-    line-height: 120%;
-    img{
-        width: 120px;
-        height: 120px
-    };
-}
-.padding_author_section{
- padding: 24px 15px 40px 15px;
-}
-.auth_inside_pad{
-    padding-bottom:8px;
+.padding_paragraph{
+    padding: 0px;
 }
