@@ -163,11 +163,11 @@
             display: flex;
             flex-direction: row;
             list-style: none;
-            justify-content: space-around;
+            justify-content: space-between;
             padding: 24px 25px;
             background-color: var(--gelb);
-            position: fixed;
-            bottom: 0;
+           
+           
             width: 100%;
             img {
                 height: 40px;

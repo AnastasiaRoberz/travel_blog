@@ -14,6 +14,6 @@ main {
 }
 
 body{
-    height: 100dvh;
+    height: fit-content;
     padding-bottom: 8dvh;
 }
