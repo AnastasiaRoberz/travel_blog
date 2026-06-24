@@ -155,8 +155,10 @@
         }
     }
     nav {
-        position: relative;
-        height: 10dvh;
+        position: fixed;
+        height: 8dvh;
+        width: 100%;
+         bottom: 0;
         ul {
             display: flex;
             flex-direction: row;
