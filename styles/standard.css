@@ -13,5 +13,6 @@ main {
 }
 
 body {
-    padding-bottom: 8px; /* damit die Nav-Bar unten den Body-Inhalt nicht verdeckt */
+    height: 100dvh;
+    padding-bottom: 8dvh;
 }
