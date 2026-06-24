@@ -2,6 +2,10 @@
     .headline_hero {
         display: none;
     }
+
+    .highlights_head > p {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
