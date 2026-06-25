@@ -16,3 +16,8 @@ body {
     height: 100dvh;
     padding-bottom: 8dvh;
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
