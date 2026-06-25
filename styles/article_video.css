@@ -18,7 +18,7 @@
     text-align: justify;
 }
 p {
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     color: var(--braun);
 }
 ol {
@@ -27,7 +27,7 @@ ol {
     color: var(--braun);
 }
 .padding_top {
-    padding-top: 24px;
+    padding: 24px 0px;
 }
 .padding_bottom {
     padding-bottom: 24px;
@@ -45,7 +45,7 @@ ol {
     }
 }
 .padding_author_section {
-    padding: 24px 15px 40px 15px;
+    padding-bottom:40px ;
 }
 .auth_inside_pad {
     padding-bottom: 8px;
