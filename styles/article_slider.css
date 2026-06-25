@@ -1,31 +1,238 @@
+body {
+    padding: var(--contentbegrenzung-articles);
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 32px;
+
+
+  ol {
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--braun);
+
+    padding-top: 16px;
+
+    li {
+      margin-left: 8vw;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 120%;
+  }
+}
+
+/* .beach_destinations {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    gap: 32px;
-        
-        ol {
-            font-family: 'Palanquin';
-            font-weight: 400;
-            line-height: 120%;
-            color: var(--braun);
+    .carousel {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
 
-            padding-top: 16px;
+        width: 200px;
+        height: 350px;
 
-            li {
-                margin-left: 8vw;
-                span {
-                    font-weight: 700;
+        overflow: hidden;
+
+        input[value="card1"]:checked ~ .cards {
+            transform: translateX(0px);
+        }
+
+        input[value="card2"]:checked ~ .cards {
+            transform: translateX(-20%);
+        }
+
+        input[value="card3"]:checked ~ .cards {
+            transform: translateX(-40%);
+        }
+
+        input[value="card4"]:checked ~ .cards {
+            transform: translateX(-60%);
+        }
+
+        input[value="card5"]:checked ~ .cards {
+            transform: translateX(-80%);
+        }
+
+
+        .cards {
+            display: flex;
+            width: 500%;
+            height: 293px;
+            position: absolute;
+            left: 0px;
+            
+            
+            transition: 1s ease-in-out;
+
+            img {
+                height: 293px;
+                width: 200px;
+                object-fit: cover;
+                border-radius: 16px;
+            }
+        }
+
+
+            input {
+                display: none;
+            }
+
+            .slider_control {
+                position: absolute;
+                bottom: 0;
+                display: flex;
+                gap: 8px;
+
+                label {
+                        height: 22px;
+                        width: 22px;
+                        background: var(--türkisLight);
+                        border-radius: 50px;
+                        cursor: pointer;
+                        transition: 250ms ease-in-out;
                 }
             }
-        };
-            
-        
-        p {
-            font-size: 1rem;
-            line-height: 120%;
-        }
+
+            #element_card1:checked ~ .slider_control label:nth-child(1),
+            #element_card2:checked ~ .slider_control label:nth-child(2),
+            #element_card3:checked ~ .slider_control label:nth-child(3),
+            #element_card4:checked ~ .slider_control label:nth-child(4),
+            #element_card5:checked ~ .slider_control label:nth-child(5) {
+                width: 40px;
+                height: 22px;
+                border-radius: 50px;
+                background: var(--türkis);
+                transition: 250ms ease-in-out;
+            }
+    }
+} */
+
+.beach_destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 350px;
+
+    overflow: hidden;
+    position: relative;
+
+    .cards {
+      display: flex;
+      width: 1000px;
+      height: 293px;
+
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      margin-left: -100px;
+
+      transition: all 250ms ease-in-out;
+
+      img {
+        width: 200px;
+        height: 293px;
+        object-fit: cover;
+        border-radius: 16px;
+
+        transform: perspective(250px) rotateY(15deg) translateX(5px) scale(0.9);
+        transform-origin: 50% 50%;
+        z-index: 1;
+
+        box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    .slider_control {
+      position: absolute;
+      bottom: 0px;
+      display: flex;
+      gap: 8px;
+
+      label {
+        height: 22px;
+        width: 22px;
+        background: var(--türkisLight);
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+      }
+    }
+
+    #element_card1:checked ~ .cards {
+      transform: translateX(0px);
+    }
+
+    #element_card2:checked ~ .cards {
+      transform: translateX(-20%);
+    }
+
+    #element_card3:checked ~ .cards {
+      transform: translateX(-40%);
+    }
+
+    #element_card4:checked ~ .cards {
+      transform: translateX(-60%);
+    }
+
+    #element_card5:checked ~ .cards {
+      transform: translateX(-80%);
+    }
+
+    #element_card1:checked ~ .cards img:nth-child(1) ~ img,
+    #element_card2:checked ~ .cards img:nth-child(2) ~ img,
+    #element_card3:checked ~ .cards img:nth-child(3) ~ img,
+    #element_card4:checked ~ .cards img:nth-child(4) ~ img {
+        transform: perspective(250px) rotateY(-15deg) translateX(-5px) scale(0.9);
+    }
+
+    #element_card1:checked ~ .cards img:nth-child(1),
+    #element_card2:checked ~ .cards img:nth-child(2),
+    #element_card3:checked ~ .cards img:nth-child(3),
+    #element_card4:checked ~ .cards img:nth-child(4),
+    #element_card5:checked ~ .cards img:nth-child(5) {
+      transform: perspective(250px) rotateY(0deg) translateX(0px);
+      z-index: 2;
+    }
+
+
+    #element_card1:checked ~ .slider_control label:nth-child(1),
+    #element_card2:checked ~ .slider_control label:nth-child(2),
+    #element_card3:checked ~ .slider_control label:nth-child(3),
+    #element_card4:checked ~ .slider_control label:nth-child(4),
+    #element_card5:checked ~ .slider_control label:nth-child(5) {
+      width: 40px;
+      height: 22px;
+      border-radius: 50px;
+      background: var(--türkis);
+      transition: 250ms ease-in-out;
+    }
+  }
 }
-
-
