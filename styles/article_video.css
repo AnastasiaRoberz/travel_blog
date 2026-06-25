@@ -11,6 +11,10 @@
     border-radius: 30px;
     overflow: hidden;
 }
+.iframePadding{
+    padding: 24px 0px 24px 0px;
+
+}
 .section_padding {
     padding: 24px 15px;
 }
