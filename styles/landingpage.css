@@ -155,9 +155,9 @@
 
                     position: absolute;
                     top: 93px;
-                    left: 14px;
+                    /* left: 14px; */
 
-                    width: clamp(264px, 80dvw, 880px);
+                    width: clamp(256px, 80dvw, 880px);
                     max-width: 880px;
                     /* height: clamp(190px, 20dvh, 230px); */
                     height: auto;
@@ -168,6 +168,7 @@
 
                     gap: 8px;
                     padding: 16px;
+                    margin: 0px clamp(12px, 3dvw, 38px) 0px;
 
                     display: flex;
                     flex-direction: column;
