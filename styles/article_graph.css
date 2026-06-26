@@ -16,6 +16,67 @@
         height: 120px;
     }
 }
+
+.article3 {
+    height: 100dvh;
+    padding: var(--contentbegrenzung-articles);
+
+    line-height: 120%;
+
+    h4 {
+        text-align: center;
+        font-size: 1.25rem;
+        padding-bottom: 16px;
+    }
+
+    img {
+        background-color: aqua;
+        border-radius: 10%;
+    }
+
+    .rain-periods {
+        padding: 32px 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            padding-bottom: 24px;
+        }
+
+        img {
+            width: 345px;
+            height: 183px;
+        }
+    }
+    .beach-activities {
+        padding: 32px 0px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 343px;
+            height: 311px;
+        }
+    }
+
+    .expenses {
+        padding-bottom: 32px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 343px;
+            height: 311px;
+        }
+    }
+}
+
 footer {
     background: var(--türkis);
     height: 134px;
