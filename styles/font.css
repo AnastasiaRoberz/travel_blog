@@ -80,12 +80,14 @@
 
 h1 {
   font-family: 'Arima';
+  font-size: 3.75rem;
   font-weight: 700;
   color: var(--braun);
 }
 
 h2 {
   font-family: 'Arima';
+  font-size: 3.25rem;
   font-weight: 700;
   color: var(--türkis);
   line-height: 120%;
@@ -93,18 +95,21 @@ h2 {
 
 h3 {
   font-family: 'Arima';
+  font-size: 4rem;
   font-weight: 700;
   color: var(--gelb);
 }
 
 h4 {
   font-family: 'Arima';
+  font-size: 2rem;
   font-weight: 600;
   color: var(--braun);
 }
 
 p {
   font-family: 'Palanquin';
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--braun);
 }
