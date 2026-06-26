@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 .iframePadding{
-    padding: 24px 0px 24px 0px;
+    padding: 24px 15px;
 
 }
 .section_padding {
@@ -25,17 +25,20 @@ p {
     /* padding: 0px 15px; */
     color: var(--braun);
 }
-ol {
+ul {
     text-align: justify;
-    padding: 0px 15px 24px 15px;
+  padding: 0px 15px 24px 15px;
+      margin: 0px 20px 0px 20px;
     color: var(--braun);
+ font-family: Palanquin;
+font-weight: 400;
+font-size: 1rem;
+
 }
-.padding_top {
-    padding: 24px 0px;
-}
+
 .padding_bottom {
     padding-bottom: 24px;
 }
 .padding_paragraph {
-    padding: 0px;
+    padding: 0px 15px;
 }
