@@ -7,12 +7,11 @@
     h4 {
         text-align: center;
         font-size: 1.25rem;
-        padding-bottom: 16px;
     }
 
     img {
-        background-color: aqua;
-        border-radius: 10%;
+        border-radius: 30px;
+        box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
     }
 
     .rain-periods {
@@ -38,9 +37,13 @@
         flex-direction: column;
         align-items: center;
 
+        gap: 16px;
+
         img {
             width: 343px;
             height: 311px;
+
+            object-fit: cover;
         }
     }
 
@@ -51,10 +54,11 @@
         flex-direction: column;
         align-items: center;
 
+        gap: 16px;
+
         img {
             width: 343px;
             height: 311px;
         }
     }
 }
-
