@@ -16,7 +16,7 @@ footer {
     width: 100%;
     background: var(--türkis);
     .position_class_footer {
-               position: absolute;
+        position: absolute;
         bottom: 0;
         display: flex;
         justify-content: space-between;

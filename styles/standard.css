@@ -13,10 +13,8 @@ main {
 }
 
 body{
-    /* height: fit-content; */
     min-height: 100dvh;
     height: 100%;
-    /* padding-bottom: 8dvh; */
 }
 
 a {
