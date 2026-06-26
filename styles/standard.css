@@ -4,7 +4,6 @@
     box-sizing: border-box;
     position: relative;
     scroll-behavior: smooth;
-    
 }
 
 main {
@@ -18,4 +17,9 @@ body{
     min-height: 100dvh;
     height: 100%;
     /* padding-bottom: 8dvh; */
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
