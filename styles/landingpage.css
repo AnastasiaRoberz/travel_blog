@@ -1,7 +1,7 @@
 .faq {
     width: 100%;
     max-width: 1440px;
-    padding: var(--contentbegrenzung);
+    padding: 80px var(--contentbegrenzung_landingpage);
 
     display: flex;
     flex-direction: column;
