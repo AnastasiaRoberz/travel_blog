@@ -19,16 +19,29 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+    nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+    nav {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1441px) {
     footer {
         padding: 60px max(120px, calc(50% - 720px));
+    }
+
+    nav {
+        display: none;
     }
 }
