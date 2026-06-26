@@ -26,3 +26,9 @@
 
 @media screen and (min-width: 1280px) {
 }
+
+@media screen and (min-width: 1441px) {
+    footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+}
