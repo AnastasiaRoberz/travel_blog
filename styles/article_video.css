@@ -23,7 +23,7 @@ p {
 }
 ol {
     text-align: justify;
-    padding: 0px 15px;
+    padding: 0px 15px 24px 15px;
     color: var(--braun);
 }
 .padding_top {
@@ -32,79 +32,6 @@ ol {
 .padding_bottom {
     padding-bottom: 24px;
 }
-.author_card {
-    background-color: var(--türkisLight);
-    max-height: 350px;
-    padding: 16px 8px;
-    text-align: center;
-    border-radius: 30px;
-    line-height: 120%;
-    img {
-        width: 120px;
-        height: 120px;
-    }
-}
-.padding_author_section {
-    padding: 24px 15px 40px 15px;
-}
-.auth_inside_pad {
-    padding-bottom: 8px;
-}
-footer {
-    background: var(--türkis);
-    height: 134px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 20px;
-    .paragraph_text {
-        color: white;
-    }
-    .copywrite_Section {
-        font-size: clamp(16px, 5dvw, 18px);
-    }
-    .copywrite_logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4px;
-        img {
-            height: 20px;
-            width: 20px;
-        }
-    }
-    .social_media_logo {
-        display: flex;
-        justify-content: space-between;
-        width: 45%;
-        padding-top: 80px;
-        padding-bottom: 30px;
-        img {
-            height: 24px;
-            width: 24px;
-        }
-        .youtubeimg {
-            height: 24px;
-            width: 33px;
-        }
-    }
-}
-nav {
-    position: relative;
-    height: 10dvh;
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-around;
-        padding: 24px 25px;
-        background-color: var(--gelb);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        img {
-            height: 40px;
-            width: 40px;
-        }
-    }
+.padding_paragraph {
+    padding: 0px;
 }
