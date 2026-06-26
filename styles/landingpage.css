@@ -1,5 +1,6 @@
 .hero {
     width: 100%;
+    max-width: 1440px;
     height: 515px;
     background: url(../assets/png/header\ photo.png);
     background-position-y: center;
@@ -32,7 +33,9 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 80px 20px;
+    padding: 0px var(--contentbegrenzung_landingpage);
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     .highlights_head {
         p {
@@ -203,7 +206,7 @@
 .faq {
     width: 100%;
     max-width: 1440px;
-    padding: 80px var(--contentbegrenzung_landingpage);
+    padding: 0px var(--contentbegrenzung_landingpage);
 
     display: flex;
     flex-direction: column;
