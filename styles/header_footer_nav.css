@@ -1,7 +1,14 @@
-header {
+
+.content_begrenzung_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
     background: var(--türkis);
     height: 70px;
     width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
