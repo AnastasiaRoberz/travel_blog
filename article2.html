@@ -9,75 +9,69 @@
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/font.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
-    <link rel="stylesheet" href="./styles/article_video.css" />
+    <link rel="stylesheet" href="./styles/articles.css" />
     <link rel="stylesheet" href="./styles/author_box.css" />
     <link rel="stylesheet" href="./styles/articles_top_section.css" />
     <link rel="stylesheet" href="./styles/header_footer_nav.css" />
-        <link rel="stylesheet" href="./styles/proTipps_section.css" />
+    <link rel="stylesheet" href="./styles/proTipps_section.css" />
 
     <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
   </head>
 
   <body>
     <header>
-      <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+      <a href="index.html">
+        <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+      </a>
     </header>
 
     <main>
-      <section class="section_padding">
-        <p class="sub_heading">A Stylish Scandinavian Escape</p>
-        <h3>Copenhagen in 3 Days: Big Experiences, Smart Spending</h3>
-        <span>
-          Discover Copenhagen, where historic charm meets modern design, vibrant
-          cycling culture and waterfront living. Experience the heart of
-          Scandinavia through cozy cafés, innovative cuisine, and effortlessly
-          cool city life.
-        </span>
-        <article class="detailstable">
-          <div class="firstrow">
-            <div class="innerDiv">
-              <img
-                class="calenderimg"
-                src="./assets/icon/article/calendar.svg"
-                alt="calender"
-              />
-              <p>Date: 26.01.2026</p>
-            </div>
-            <div class="innerDiv">
-              <img
-                class="eyeglassimg"
-                src="./assets/icon/article/eyeglasses.svg"
-                alt="eyeglass"
-              />
-              <p>Reading time: 6 min.</p>
-            </div>
-          </div>
-          <div class="secondrow">
-            <div class="innerDiv">
-              <img
-                class="visibilityimg"
-                src="./assets/icon/article/visibility.svg"
-                alt="visibility"
-              />
-              <p>Read: 164</p>
-            </div>
-            <div class="innerDiv">
-              <img
-                class="shareimg"
-                src="./assets/icon/article/share.svg"
-                alt="share"
-              />
-              <p>Shared: 18</p>
-            </div>
-          </div>
-        </article>
-      </section>
+      <section class="article_head">
+        <section class="heading">
+          <p class="sub_heading">A Stylish Scandinavian Escape</p>
+          <h3>Copenhagen in 3 Days: Big Experiences, Smart Spending</h3>
+          <p class="prolog">
+            Discover Copenhagen, where historic charm meets modern design,
+            vibrant cycling culture and waterfront living. Experience the heart
+            of Scandinavia through cozy cafés, innovative cuisine, and
+            effortlessly cool city life.
+          </p>
+        </section>
 
-      <section class="padding_author_section">
-        <div class="author_card">
-          <img src="./assets/png/Ellipse 21.png" alt="author image" />
-          <p class="p_for_author_bold">Tamara Wallker</p>
-          <p class="auth_inside_pad p_for_author_light">Author</p>
+        <section class="article_details">
+          <p>
+            <svg class="date_icon">
+              <use href="./assets/icon/icons.svg#icon-date"></use>
+            </svg>
+            Date: 26.01.2026
+          </p>
+
+          <p>
+            <svg class="reading_time_icon">
+              <use href="./assets/icon/icons.svg#icon-reading-time"></use>
+            </svg>
+            Reading time: 6 min.
+          </p>
+
+          <p>
+            <svg class="read_icon">
+              <use href="./assets/icon/icons.svg#icon-read"></use>
+            </svg>
+            Read: 164
+          </p>
+
+          <p>
+            <svg class="shared_icon">
+              <use href="./assets/icon/icons.svg#icon-shared"></use>
+            </svg>
+            Shared: 18
+          </p>
+        </section>
+
+        <section class="author_card">
+          <img src="./assets/png/author_photo.jpg" alt="author image" />
+          <p class="name">Tamara Wallker</p>
+          <p class="job_title">Author</p>
           <p>
             I’ve been traveling since 2017, chasing moments instead of plans.
             I’m fascinated by snakes, love sharks, would happily spend weeks
@@ -85,25 +79,24 @@
             there’s a next destination, I know I’m exactly where I’m meant to
             be.
           </p>
-        </div>
+        </section>
       </section>
+
       <article>
-        <p class="align_text">
+        <p class="article_text">
           Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
           malesuada. Ante in commodo porta scelerisque turpis gravida semper.
           Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
           malesuada. Ante in commodo porta scelerisque turpis gravida semper.
         </p>
-        <section class="iframePadding">
-          <div class="iframe_class">
-            <iframe
-              width="345"
-              height="193"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
-            ></iframe>
-          </div>
-        </section>
-        <p class="align_text">
+
+        <div class="iframe_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"
+          ></iframe>
+        </div>
+
+        <p class="article_text">
           Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
           malesuada. Ante in commodo porta scelerisque turpis gravida semper.
           Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
@@ -113,131 +106,132 @@
           enim vestibulum malesuada. Ante in comm odo porta scelerisque turpis
           gravida semper.
         </p>
-        <p class="padding_top align_text">
-          Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
-          malesuada.:
-        </p>
 
-        <section>
-          <ol>
+        <section class="list">
+          <p class="article_text">
+            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
+            malesuada.:
+          </p>
+          <ul class="article_text">
             <li>
-              turpis gravida <strong>semper</strong>. Lorem ipsum dolor sit amet
-              consectetur. Egestas a enim vestibulum malesuada. Eta scelerisque
-              turpis gravida semper.
+              turpis gravida <span class="article_bold">semper</span>. Lorem
+              ipsum dolor sit amet consectetur. Egestas a enim vestibulum
+              malesuada. Eta scelerisque turpis gravida semper.
             </li>
             <li>
-              <strong>Lorem ipsum</strong> dolor sit ameta enim vestibulum
-              malesuada. Ante intrew commodo porta scelerisque turpis. ipsum
-              dolor sit amet consectetur. Egestas a enim vestibulum malesuada.
+              <span class="article_bold">Lorem ipsum</span> dolor sit ameta enim
+              vestibulum malesuada. Ante intrew commodo porta scelerisque
+              turpis. ipsum dolor sit amet consectetur. Egestas a enim
+              vestibulum malesuada.
             </li>
             <li>
               Ante in commodo porta
-              <strong>scelerisque</strong> turpis gravida semper.
+              <span class="article_bold">scelerisque</span> turpis gravida
+              semper.
             </li>
-          </ol>
-          <p class="padding_top align_text padding_paragraph">
-            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
-            malesuada. Ante in commodo porta scelerisque turpis gravida semper.
-            Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
-            malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor
-            sit amet consectetur.
-          </p>
-          <p class="align_text padding_paragraph">
-            Egestas a enim vestibulum malesuada. Ante in commodo porta
-            scelerisque turpis gravida semper. Lorem ipsum dolor sit amet
-            consectetur. Egestas a enim vestibulum malesuada. Ante in commodo
-            porta scelerisque turpis gravida semper. Lorem ipsum dolor sit ameta
-            enim
-          </p>
-          <p class="padding_bottom align_text padding_paragraph">
-            vestibulum malesuada. Antenes intrew commodo porta scelerisque
-            turpis. ipsum dolor sit ametert consectetur. Egestas a enim
-            vestibulum malesuada. Ante in comm odo porta scelerisque turpis
-            gravida semper.
-          </p>
-        </section>
-                <section class="p-top">
-                    <div class="protipps_section">
-                        <img
-                            src="./assets/icon/lightbulb.svg"
-                            alt="lightbulb "
-                        />
-                        <p class="protipps">Pro tipps</p>
-                    </div>
-                    <div class="protippCard">
-                        <ol>
-                            <li>
-                                Ante in commodo porta scelerisque turpis gravida
-                                semper.
-                                <strong class="usefullink">Useful link</strong>.
-                                Egestas a enim vestibulum malesuada. Eta
-                                scelerisque turpis gravida semper.
-                            </li>
-                            <li>
-                                Lorem ipsum dolor sit ameta enim vestibulum
-                                malesuada. Ante intrew commodo porta scelerisque
-                                turpis. ipsum dolor sit amet consectetur.
-                                Egestas a enim vestibulum malesuada. Ante in
-                                commodo porta scelerisque turpis gravida semper.
-                            </li>
-                        </ol>
-                    </div>
-                </section>
-      </article>
-    </main>
-    <footer>
-      <div class="position_class_footer">
-        <section class="copywrite_Section">
-          <p class="paragraph_text">Imprint</p>
-          <p class="paragraph_text">Cookie Preferences</p>
-          <span class="copywrite_logo">
-            <img src="./assets/icon/copyright.svg" alt="copywrite image" />
-            <p class="paragraph_text">Travel Blog 2026</p>
-          </span>
+          </ul>
         </section>
 
-        <section class="social_media_logo">
-          <a target="_blank" href="https://www.tiktok.com/"
-            ><img
-              src="./assets/icon/social_media/tiktok.svg"
-              alt="ticktok icon"
-          /></a>
-          <a target="_blank" href="https://www.youtube.com/">
-            <img
-              class="youtubeimg"
-              src="./assets/icon/social_media/youtube.svg"
-              alt="youtube icon"
-          /></a>
-          <a target="_blank" href="https://www.facebook.com/"
-            ><img
-              src="./assets/icon/social_media/facebook.svg"
-              alt="facebook icon"
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/">
-            <img
-              src="./assets/icon/social_media/Instagram.svg"
-              alt="Instagram icon"
-          /></a>
-        </section>
-      </div>
+        <p class="article_text">
+          Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
+          malesuada. Ante in commodo porta scelerisque turpis gravida semper.
+          Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum
+          malesuada. Eta scelerisque turpis gravida semper. Lorem ipsum dolor
+          sit amet consectetur. <br>
+          Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque
+          turpis gravida semper. Lorem ipsum dolor sit amet consectetur. Egestas
+          a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis
+          gravida semper. Lorem ipsum dolor sit ameta enim vestibulum malesuada. Antenes intrew commodo porta scelerisque turpis.
+          ipsum dolor sit ametert consectetur. Egestas a enim vestibulum
+          malesuada. Ante in comm odo porta scelerisque turpis gravida semper.
+        </p>
+      </article>
+
+      <section class="p-top">
+        <p class="protipps_heading">
+          <svg>
+            <use href="./assets/icon/icons.svg#icon-lightbulb"></use>
+          </svg>
+          Pro tipps
+        </p>
+
+        <ol class="protippCard">
+          <li class="article_text">
+            Ante in commodo porta scelerisque turpis gravida semper.
+            <a
+              class="article_bold"
+              target="blank"
+              href="https://letmegooglethat.com/"
+              >Useful link</a
+            >. Egestas a enim vestibulum malesuada. Eta scelerisque turpis
+            gravida semper.
+          </li>
+          <li class="article_text">
+            Lorem ipsum dolor sit ameta enim vestibulum malesuada. Ante intrew
+            commodo porta scelerisque turpis. ipsum dolor sit amet consectetur.
+            Egestas a enim vestibulum malesuada. Ante in commodo porta
+            scelerisque turpis gravida semper.
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      <section class="copyright_section">
+        <p>Imprint</p>
+        <p>Cookie Preferences</p>
+        <p class="copyright">
+          <svg class="svg_small">
+            <use
+              class="icon_copyright"
+              href="./assets/icon/icons.svg#icon-copyright"
+            ></use>
+          </svg>
+          Travel Blog 2026
+        </p>
+      </section>
+
+      <section class="social_media_logo">
+        <a target="_blank" href="https://www.tiktok.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-tiktok"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/">
+          <svg class="svg_youtube">
+            <use href="./assets/icon/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </section>
     </footer>
+
     <nav>
-      <ul>
-        <li>
-          <a href="./index.html"
-            ><img src="./assets/icon/Home.svg" alt="home icon"
-          /></a>
-        </li>
-        <li>
-          <img src="./assets/icon/rocket_launch.svg" alt="rocket icon" />
-        </li>
-        <li>
-          <img src="./assets/icon/live_help.svg" alt="live help icon" />
-        </li>
-        <li>
-          <img src="./assets/icon/person_pin.svg" alt="person pin icon" />
-        </li>
-      </ul>
+      <a target="_self" href="./index.html">
+        <svg class="svg_large">
+          <use href="./assets/icon/icons.svg#icon-home"></use>
+        </svg>
+      </a>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-rocket"></use>
+      </svg>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+      </svg>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-person"></use>
+      </svg>
     </nav>
   </body>
 </html>
