@@ -11,7 +11,7 @@
     }
 }
 .padding_author_section{
- padding: 24px 15px 40px 15px;
+ padding: 0 15px 40px 15px;
 }
 .auth_inside_pad{
     padding-bottom:8px;
@@ -19,6 +19,7 @@
 p {
     padding: 0px 15px;
     color: var(--braun);
+    font-size: 1rem
 }
 .p_for_author_bold{
   font-family: Arima;
