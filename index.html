@@ -16,13 +16,12 @@
   </head>
 
   <body>
-    <section class="content_begrenzung_wrapper">
- <header>
-      <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+    <header>
+      <a href="index.html">
+        <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+      </a>
     </header>
-    </section>
-   
-    
+
     <main>
       <section class="hero">
         <div class="yellow_swirl">
@@ -39,20 +38,20 @@
 
       <section class="highlights">
         <section class="highlights_head">
-          <div class="highlights_headline">
-            <img
-              id="rocket_highlights"
-              src="./assets/icon/rocket.svg"
-              alt="rocket_icon"
-            />
-            <h2>Highlights</h2>
-          </div>
+          <h2>
+            <svg class="svg_large">
+              <use href="./assets/icon/icons.svg#icon-rocket"></use>
+            </svg>
+            Highlights
+          </h2>
+
           <p>
             From the vibrant cultures of Asia to the sun-drenched islands of the
             Caribbean and the serene landscapes of Scandinavia, each destination
             offers a distinct way to explore the world.
           </p>
         </section>
+
         <section class="slider_highlights">
           <input
             type="radio"
@@ -79,6 +78,7 @@
             id="element_fuji"
             value="fuji"
           />
+
           <div class="slider_control">
             <label for="element_beach" checked></label>
             <label for="element_copenhagen"></label>
@@ -87,63 +87,60 @@
           </div>
 
           <div class="slider_highlights_wrapper">
-            <div class="slide">
+            <a class="slide" href="article1.html">
               <img
                 class="slider_highlights_element"
                 src="./assets/png/beach.png"
                 alt="beach_img"
               />
               <div class="slider_text">
-                <a href="article1.html"
-                  >The World’s Most Breathtaking Beaches</a
-                >
+                <p class="headline">The World’s Most Breathtaking Beaches</p>
                 <p>
                   From powder-soft white sands to dramatic coastlines kissed by
                   turquoise waves, these ...
                 </p>
               </div>
-            </div>
-            <div class="slide">
+            </a>
+
+            <a class="slide" href="article2.html">
               <img
                 class="slider_highlights_element"
                 src="./assets/png/copenhagen.png"
                 alt="copenhagen_img"
               />
               <div class="slider_text">
-                <a href="article2.html">
-                  Copenhagen in 3 Days: Big Experiences, Smart Spending
-                </a>
+                <p class="headline">Copenhagen in 3 Days: Big Experiences, Smart Spending</p>
                 <p>
                   Discover Copenhagen, where historic charm meets modern design,
                   vibrant cycling culture and waterfront living.
                 </p>
               </div>
-            </div>
-            <div class="slide">
+            </a>
+
+            <a class="slide" href="article3.html">
               <img
                 class="slider_highlights_element"
                 src="./assets/png/pattaya.png"
                 alt="pattaya_img"
               />
               <div class="slider_text">
-                <a href="article3.html">
-                  Pattaya Pulse: Food, Sun and Neon Nights
-                </a>
+                <p class="headline">Pattaya Pulse: Food, Sun and Neon Nights</p>
                 <p>
                   From bustling promenades to nearby islands, the city offers an
                   energetic and diverse escape. Discover Pattaya City, with
                   vibrant nightlife and rich cultural landmarks.
                 </p>
               </div>
-            </div>
-            <div class="slide">
+            </a>
+
+            <a class="slide" href="article2.html">
               <img
                 class="slider_highlights_element"
                 src="./assets/png/fuji.png"
                 alt="fuji_img"
               />
               <div class="slider_text">
-                <a href="article2.html">Mountain Fuji</a>
+                <p class="headline">Mountain Fuji</p>
                 <p>
                   The most iconic mountain and an active volcano located about
                   100 kilometers southwest of Tokyo. Written with the characters
@@ -151,22 +148,26 @@
                   strength, honor, and enduring prestige.
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </section>
       </section>
 
       <section class="faq">
-        <div class="headline">
-          <img src="./assets/icon/questionmark_yellow.svg" alt="" />
-          <h2>FAQ</h2>
-        </div>
+        <h2>
+          <svg class="svg_large">
+            <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+          </svg>
+          FAQ
+        </h2>
 
         <ul class="summaries">
           <details>
             <summary>
-              <p>What’s the story behind my travel blog?</p>
-              <img src="./assets/icon/arrow.svg" alt="Pfeil" />
+              What’s the story behind my travel blog?
+              <svg class="svg_medium">
+                <use href="./assets/icon/icons.svg#icon-arrow"></use>
+              </svg>
             </summary>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -178,8 +179,10 @@
 
           <details>
             <summary>
-              <p>How do I plan, document, and share my travels?</p>
-              <img src="./assets/icon/arrow.svg" alt="Pfeil" />
+              How do I plan, document, and share my travels?
+              <svg class="svg_medium">
+                <use href="./assets/icon/icons.svg#icon-arrow"></use>
+              </svg>
             </summary>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
@@ -195,11 +198,11 @@
 
           <details>
             <summary>
-              <p>
-                How can brands, companies, or fellow creators collaborate with
-                me or get in touch?
-              </p>
-              <img src="./assets/icon/arrow.svg" alt="Pfeil" />
+              How can brands, companies, or fellow creators collaborate with me
+              or get in touch?
+              <svg class="svg_medium">
+                <use href="./assets/icon/icons.svg#icon-arrow"></use>
+              </svg>
             </summary>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
@@ -214,8 +217,10 @@
 
           <details>
             <summary>
-              <p>How can readers support this blog and the work behind it?</p>
-              <img src="./assets/icon/arrow.svg" alt="Pfeil" />
+              How can readers support this blog and the work behind it?
+              <svg class="svg_medium">
+                <use href="./assets/icon/icons.svg#icon-arrow"></use>
+              </svg>
             </summary>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -230,60 +235,64 @@
         </ul>
       </section>
     </main>
-<section class="content_begrenzung_wrapper">
-      <footer>
-      <div class="position_class_footer">
-        <section class="copywrite_Section">
-          <p class="paragraph_text">Imprint</p>
-          <p class="paragraph_text">Cookie Preferences</p>
-          <span class="copywrite_logo">
-            <img src="./assets/icon/copyright.svg" alt="copywrite image" />
-            <p class="paragraph_text">Travel Blog 2026</p>
-          </span>
-        </section>
 
-        <section class="social_media_logo">
-          <a target="_blank" href="https://www.tiktok.com/"
-            ><img
-              src="./assets/icon/social_media/tiktok.svg"
-              alt="ticktok icon"
-          /></a>
-          <a target="_blank" href="https://www.youtube.com/">
-            <img
-              class="youtubeimg"
-              src="./assets/icon/social_media/youtube.svg"
-              alt="youtube icon"
-          /></a>
-          <a target="_blank" href="https://www.facebook.com/"
-            ><img
-              src="./assets/icon/social_media/facebook.svg"
-              alt="facebook icon"
-          /></a>
-          <a target="_blank" href="https://www.instagram.com/">
-            <img
-              src="./assets/icon/social_media/Instagram.svg"
-              alt="Instagram icon"
-          /></a>
-        </section>
-      </div>
+    <footer>
+      <section class="copyright_section">
+        <p>Imprint</p>
+        <p>Cookie Preferences</p>
+        <p class="copyright">
+          <svg class="svg_small">
+            <use
+              class="icon_copyright"
+              href="./assets/icon/icons.svg#icon-copyright"
+            ></use>
+          </svg>
+          Travel Blog 2026
+        </p>
+      </section>
+
+      <section class="social_media_logo">
+        <a target="_blank" href="https://www.tiktok.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-tiktok"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/">
+          <svg class="svg_youtube">
+            <use href="./assets/icon/icons.svg#icon-youtube"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <svg class="svg_medium">
+            <use href="./assets/icon/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </section>
     </footer>
+
     <nav>
-      <ul>
-        <li>
-          <a target="_self" href="./index.html"
-            ><img src="./assets/icon/Home.svg" alt="home icon"
-          /></a>
-        </li>
-        <li>
-          <img src="./assets/icon/rocket_launch.svg" alt="rocket icon" />
-        </li>
-        <li>
-          <img src="./assets/icon/live_help.svg" alt="live help icon" />
-        </li>
-        <li>
-          <img src="./assets/icon/person_pin.svg" alt="person pin icon" />
-        </li>
-      </ul>
+      <a target="_self" href="./index.html">
+        <svg class="svg_large">
+          <use href="./assets/icon/icons.svg#icon-home"></use>
+        </svg>
+      </a>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-rocket"></use>
+      </svg>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+      </svg>
+
+      <svg class="svg_large">
+        <use href="./assets/icon/icons.svg#icon-person"></use>
+      </svg>
     </nav>
 </section>
    

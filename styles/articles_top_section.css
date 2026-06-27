@@ -1,87 +1,111 @@
-.detailstable {
-    padding-top: 24px;
-    font-family: Palanquin;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 1rem;
-    line-height: 120%;
-    letter-spacing: 0%;
+.article_head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .heading {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 
-    .firstrow {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 16px;
-        p {
-            padding: 0px;
-            font-size: 1rem;
+    .sub_heading {
+      font-family: Palanquin;
+      color: var(--türkis);
+      font-weight: 600;
+      font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+      line-height: 120%;
+    }
 
-        }
-        .calenderimg {
-            width: 16px;
-            height: 18px;
-        }
-        .eyeglassimg {
-            width: 20px;
-            height: 7px;
-        }
+    .prolog {
+      font-family: Palanquin;
+      font-weight: 400;
+      font-size: clamp(1.13rem, 2.2vw, 2rem);
+      line-height: 120%;
+      color: var(--braun);
     }
-    .secondrow {
-        padding-top: 8px;
-        p {
-            padding: 0px;
-             font-size: 1rem;
-        }
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 16px;
-        .shareimg {
-            width: 16px;
-            height: 18px;
-        }
-        .visibilityimg {
-            width: 20px;
-            height: 14px;
-        }
-    }
-    .innerDiv {
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
+  }
 }
-.section_padding {
-    padding: 24px 15px;
-}
-h3 {
-    font-weight: 700;
-    font-style: Bold;
-    font-size: clamp(2.5rem, calc(2.105rem + 2.105dvw), 4rem);
-    line-height: 100%;
-    letter-spacing: 0%;
-    padding-bottom: 8px;
-}
-.sub_heading {
-    font-family: Palanquin;
-    color: var(--türkis);
-    font-weight: 600;
-    font-size: clamp(1.25rem, calc(0.921rem + 1.754dvw), 2.5rem);
-    line-height: 120%;
-    letter-spacing: 0%;
-    padding: 0px 0px 8px 0px;
-    text-align: justify;
-}
-span {
+
+.article_details {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  p {
     font-family: Palanquin;
     font-weight: 400;
-    font-style: Regular;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 120%;
-    letter-spacing: 0%;
     color: var(--braun);
-    text-align: justify;
 
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .date_icon {
+      width: 16px;
+      height: 18px;
+      fill: var(--türkis);
+    }
+
+    .reading_time_icon {
+      width: 20px;
+      height: 7px;
+      fill: var(--türkis);
+    }
+
+    .read_icon {
+      width: 20px;
+      height: 14px;
+      fill: var(--türkis);
+    }
+
+    .shared_icon {
+      width: 16px;
+      height: 18px;
+      fill: var(--türkis);
+    }
+  }
+}
+
+.author_card {
+  background-color: var(--türkisLight);
+  padding: 16px 8px;
+  text-align: center;
+  border-radius: 30px;
+
+  img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 75% center;
+
+    margin-bottom: 16px;
+  }
+
+  .name {
+    font-family: Arima;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    font-weight: 700;
+    color: var(--braun);
+  }
+
+  .job_title {
+    font-family: Arima;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    line-height: 120%;
+    color: var(--braun);
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-family: Palanquin;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: var(--braun);
+  }
 }

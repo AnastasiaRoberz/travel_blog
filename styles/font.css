@@ -73,46 +73,59 @@
   src: url('../assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
-* {
+html {
     font-size: 16px;
 }
 
 h1 {
   font-family: 'Arima';
-  font-size: 3.75rem;
+  font-size: clamp(2.5rem, 4.5vw, 3.75rem);
+  line-height: 120%;
   font-weight: 700;
   color: var(--braun);
 }
 
 h2 {
   font-family: 'Arima';
-  font-size: 3.25rem;
+  font-size: clamp(2.5rem, 4.5vw, 3.25rem);
+  line-height: 120%;
   font-weight: 700;
   color: var(--türkis);
-  line-height: 120%;
 }
 
 h3 {
   font-family: 'Arima';
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 5.5vw, 4rem);
+  line-height: 120%;
   font-weight: 700;
   color: var(--gelb);
 }
 
 h4 {
   font-family: 'Arima';
-  font-size: 2rem;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  line-height: 120%;
   font-weight: 600;
   color: var(--braun);
 }
 
-p {
+.article_text {
   font-family: 'Palanquin';
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 120%;
   font-weight: 400;
   color: var(--braun);
 }
-ol{
-   font-family: 'Palanquin';
+
+.article_bold {
+  font-family: 'Palanquin';
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--braun);
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
