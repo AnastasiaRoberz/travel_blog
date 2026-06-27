@@ -91,6 +91,10 @@ h2 {
   line-height: 120%;
   font-weight: 700;
   color: var(--türkis);
+
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
 h3 {
