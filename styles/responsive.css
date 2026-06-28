@@ -22,7 +22,23 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+    body nav {
+        display: none;
+    }
+
+    footer .footer-content .copyright_section {
+        flex-direction: row;
+        gap: 36px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+    body nav {
+        display: none;
+    }
+
+    footer .footer-content .copyright_section {
+        flex-direction: row;
+        gap: 72px;
+    }
 }
