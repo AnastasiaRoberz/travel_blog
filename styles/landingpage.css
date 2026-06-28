@@ -1,3 +1,14 @@
+main {
+    gap: 80px;
+    padding-bottom: 80px;
+}
+
+h2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 .hero {
     width: 100%;
     max-width: 1440px;
@@ -12,9 +23,6 @@
         width: 220px;
         height: 300px;
         background-color: rgba(241, 201, 83, 1);
-        /* background-image: url(../assets/png/Vector\ 17.png);
-        background-repeat: no-repeat;
-        height: 300px; */
     }
 
     .yellow_swirl img {
@@ -33,38 +41,25 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 80px 20px;
+    padding: 0px var(--contentbegrenzung_landingpage);
+    gap: 32px;
 
     .highlights_head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
         p {
             font-family: "Palanquin";
             font-weight: 500;
-            font-size: 1.5rem;
-            line-height: 110%;
-            text-align: center;
+            font-size: clamp(1rem, 1.6vw, 1.5rem);
+            line-height: 120%;
             color: var(--braun);
         }
     }
 
-    .highlights_headline {
-        display: flex;
-        justify-content: center;
-
-        gap: 8px;
-        padding-bottom: 24px;
-
-        #rocket_highlights {
-            width: 40px;
-            height: 40px;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-        }
-    }
-
     .slider_highlights {
-        /* background-color: black; */
         position: relative;
 
         width: 100%;
@@ -122,7 +117,7 @@
 
                 display: inline-block;
 
-                transition: all 250ms ease-in-out;
+                transition: var(--transition_slider);
             }
         }
 
@@ -133,7 +128,7 @@
             width: 40px;
             height: 28px;
             border-radius: 25px;
-            background: rgba(241, 201, 83, 1);
+            background: var(--gelb);
             transition: all 250ms ease-in-out;
         }
 
@@ -156,11 +151,9 @@
 
                     position: absolute;
                     top: 93px;
-                    /* left: 14px; */
 
                     width: clamp(256px, 80dvw, 880px);
                     max-width: 880px;
-                    /* height: clamp(190px, 20dvh, 230px); */
                     height: auto;
                     background-color: rgba(255, 255, 255, 0.1);
                     backdrop-filter: blur(10px);
@@ -174,9 +167,8 @@
                     display: flex;
                     flex-direction: column;
 
-                    a {
-                        /* font-size: 1.75rem; */
-                        font-size: clamp(1.5rem, 7dvw, 1.75rem);
+                    .headline {
+                        font-size: clamp(1.5rem, 7vw, 1.75rem);
                         font-family: "Palanquin Dark";
                         font-weight: 600;
                         color: white;
@@ -184,11 +176,11 @@
                     }
 
                     p {
-                        /* font-size: 1.25rem; */
-                        font-size: clamp(1.15rem, 2dvw, 1.25rem);
+                        font-family: "Palanquin";
+                        font-size: clamp(1.15rem, 2vw, 1.25rem);
+                        line-height: 110%;
                         font-weight: 400;
                         color: white;
-                        line-height: 110%;
                     }
                 }
             }
@@ -212,25 +204,12 @@
 
     gap: 32px;
 
-    .headline {
-        display: flex;
-        gap: 13px;
-
-        h2 {
-            font-size: 2.5rem;
-        }
-
-        img {
-            width: 40px;
-            height: 40px;
-        }
-    }
+    padding: var(--contentbegrenzung_landingpage);
 
     .summaries {
-        width: 100%;
-
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
 
         gap: 16px;
 
@@ -243,27 +222,22 @@
                 list-style-type: none;
                 display: flex;
                 justify-content: space-between;
+                gap: 8px;
 
-                p {
-                    font-family: "Palanquin";
-                    font-weight: 700;
-                    color: var(--braun);
-                    font-size: 1rem;
-                    line-height: 120%;
-                }
-
-                img {
-                    height: 24px;
-                    width: 24px;
-                }
+                font-family: "Palanquin";
+                font-weight: 700;
+                line-height: 120%;
+                color: var(--braun);
+                font-size: 1rem;
+                line-height: 120%;
             }
 
             > p {
                 font-family: "Palanquin";
                 font-weight: 500;
+                line-height: 120%;
                 color: var(--braun);
                 font-size: 1rem;
-                line-height: 120%;
                 background-color: white;
 
                 margin-top: 14px;
@@ -271,12 +245,8 @@
             }
         }
 
-        details:open {
-            summary {
-                img {
-                    transform: rotate(180deg);
-                }
-            }
+        details:open svg {
+            transform: rotate(180deg);
         }
     }
 }

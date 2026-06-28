@@ -1,46 +1,43 @@
+.p-top {
+  padding: 40px 0px;
+}
+
+.protipps_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+
+  background-color: var(--türkis);
+  transform: rotate(-13.67deg);
+  width: fit-content;
+  border-radius: 10px;
+
+  font-family: "Palanquin";
+  font-size: 1.75rem;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--gelb);
+
+  svg {
+    height: 42px;
+    width: 43px;
+  }
+}
+
 .protippCard {
-    background-color: var(--türkisLight);
-    padding: 24px 16px;
-    text-align: left;
-    border-radius: 30px;
-    line-height: 120%;
-}
-.usefullink {
+  background-color: var(--türkisLight);
+  padding: 24px 11.5px;
+  border-radius: 30px;
+
+  .article_text {
+    margin-left: 15px;
+  }
+
+  a {
     color: var(--türkis);
-    font-weight: 700;
+  }
 }
-.protipps {
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 1.75rem;
-    line-height: 120%;
-    letter-spacing: 0%;
-    color: var(--gelb);
-    padding: 0px 10px 0px 0px;
-}
-.protipps_section {
-    transform: rotate(-13.67deg);
-    justify-content: center;
-    align-items: center;
-    background-color: var(--türkis);
-    width: fit-content;
-    border-radius: 10px;
-    display: flex;
-    img {
-        height: 50px;
-        width: 50px;
-    }
-}
-.p-top{
-    padding-top: 32px;
-}
-ol {
-    text-align: justify;
-    padding: 0px 15px;
-    color: var(--braundark);
-font-weight: 400;
 
-line-height: 120%;
-letter-spacing: 0%;
 
-}
