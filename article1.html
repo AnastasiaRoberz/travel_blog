@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Blog</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Travel Blog</title>
 
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
@@ -14,57 +14,67 @@
     <link rel="stylesheet" href="./styles/proTipps_section.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
 
-    <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
-  </head>
+        <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
+    </head>
 
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="./assets/png/favicon.svg" alt="travel blog logo" />
-      </a>
-    </header>
-
-    <main>
-      <section class="article_head">
-        <section class="heading">
-          <p class="sub_heading">Where the Ocean Meets Your Soul</p>
-          <h3>The World’s Most Breathtaking Beaches</h3>
-          <p class="prolog">
-            From powder-soft white sands to dramatic coastlines kissed by
-            turquoise waves, these beaches are more than destinations — they’re
-            feelings.
-          </p>
-        </section>
-
-        <section class="article_details">
-          <p>
-            <svg class="date_icon">
-              <use href="./assets/icon/icons.svg#icon-date"></use>
-            </svg>
-            Date: 26.01.2026
-          </p>
-
-          <p>
-            <svg class="reading_time_icon">
-              <use href="./assets/icon/icons.svg#icon-reading-time"></use>
-            </svg>
-            Reading time: 6 min.
-          </p>
-
-          <p>
-            <svg class="read_icon">
-              <use href="./assets/icon/icons.svg#icon-read"></use>
-            </svg>
-            Read: 164
-          </p>
-
-          <p>
-            <svg class="shared_icon">
-              <use href="./assets/icon/icons.svg#icon-shared"></use>
-            </svg>
-            Shared: 18
-          </p>
-        </section>
+    <body>
+        <header>
+            <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+            <nav class="nav_header">
+                <a href="./index.html#highlights_link">Highlights</a>
+                <a href="./article1.html">Article 1</a>
+                <a href="./article2.html">Article 2</a>
+                <a href="./article3.html">Article 3</a>
+            </nav>
+        </header>
+        <main>
+            <section class="section_padding">
+                <p class="sub_heading">Where the Ocean Meets Your Soul</p>
+                <h3>The World’s Most Breathtaking Beaches</h3>
+                <span>
+                    From powder-soft white sands to dramatic coastlines kissed
+                    by turquoise waves, these beaches are more than destinations
+                    — they’re feelings.
+                </span>
+                <article class="detailstable">
+                    <div class="firstrow">
+                        <div class="innerDiv">
+                            <img
+                                class="calenderimg"
+                                src="./assets/icon/article/calendar.svg"
+                                alt="calender"
+                            />
+                            <p>Date: 26.01.2026</p>
+                        </div>
+                        <div class="innerDiv">
+                            <img
+                                class="eyeglassimg"
+                                src="./assets/icon/article/eyeglasses.svg"
+                                alt="eyeglass"
+                            />
+                            <p>Reading time: 6 min.</p>
+                        </div>
+                    </div>
+                    <div class="secondrow">
+                        <div class="innerDiv">
+                            <img
+                                class="visibilityimg"
+                                src="./assets/icon/article/visibility.svg"
+                                alt="visibility"
+                            />
+                            <p>Read: 164</p>
+                        </div>
+                        <div class="innerDiv">
+                            <img
+                                class="shareimg"
+                                src="./assets/icon/article/share.svg"
+                                alt="share"
+                            />
+                            <p>Shared: 18</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
 
         <section class="author_card">
           <img src="./assets/png/author_photo.jpg" alt="author image" />
@@ -80,59 +90,59 @@
         </section>
       </section>
 
-      <section class="beach_destinations">
-        <h4>TOP 5 beach destinations for 2026</h4>
+            <section class="beach_destinations">
+                <h4>TOP 5 beach destinations for 2026</h4>
 
-        <section class="carousel">
-          <input
-            type="radio"
-            name="carousel"
-            id="element_card1"
-            value="card1"
-            checked
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="element_card2"
-            value="card2"
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="element_card3"
-            value="card3"
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="element_card4"
-            value="card4"
-          />
-          <input
-            type="radio"
-            name="carousel"
-            id="element_card5"
-            value="card5"
-          />
+                <section class="carousel">
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="element_card1"
+                        value="card1"
+                        checked
+                    />
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="element_card2"
+                        value="card2"
+                    />
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="element_card3"
+                        value="card3"
+                    />
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="element_card4"
+                        value="card4"
+                    />
+                    <input
+                        type="radio"
+                        name="carousel"
+                        id="element_card5"
+                        value="card5"
+                    />
 
-          <div class="cards">
-            <img src="./assets/png/carousel/card1.jpg" alt="" />
-            <img src="./assets/png/carousel/card2.jpg" alt="" />
-            <img src="./assets/png/carousel/card3.jpg" alt="" />
-            <img src="./assets/png/carousel/card4.jpg" alt="" />
-            <img src="./assets/png/carousel/card5.jpg" alt="" />
-          </div>
+                    <div class="cards">
+                        <img src="./assets/png/carousel/card1.jpg" alt="" />
+                        <img src="./assets/png/carousel/card2.jpg" alt="" />
+                        <img src="./assets/png/carousel/card3.jpg" alt="" />
+                        <img src="./assets/png/carousel/card4.jpg" alt="" />
+                        <img src="./assets/png/carousel/card5.jpg" alt="" />
+                    </div>
 
-          <div class="slider_control">
-            <label for="element_card1" checked></label>
-            <label for="element_card2"></label>
-            <label for="element_card3"></label>
-            <label for="element_card4"></label>
-            <label for="element_card5"></label>
-          </div>
-        </section>
-      </section>
+                    <div class="slider_control">
+                        <label for="element_card1" checked></label>
+                        <label for="element_card2"></label>
+                        <label for="element_card3"></label>
+                        <label for="element_card4"></label>
+                        <label for="element_card5"></label>
+                    </div>
+                </section>
+            </section>
 
       <p class="article_text">
         Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum

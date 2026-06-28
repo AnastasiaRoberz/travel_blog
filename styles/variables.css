@@ -1,14 +1,14 @@
 :root {
-  /* COLORS */
-  --braun: rgb(84, 55, 13);
-  --gelb: rgb(241, 201, 83);
-  --türkis: rgb(78, 164, 135);
-  --türkisLight: rgba(78, 164, 135, 0.2);
-  --grau: rgb(61, 61, 61);
+    /* COLORS */
+    --braun: rgb(84, 55, 13);
+    --braundark: rgba(84, 55, 13, 1);
 
-  /* PADDINGS */
-  --contentbegrenzung_landingpage: max(calc(8.93% - 8.57px), 20px);
-  --contentbegrenzung_articles: max(calc(9.86% - 21.97px), 15px);
+    --gelb: rgb(241, 201, 83);
+    --türkis: rgb(78, 164, 135);
+    --türkisLight: rgba(78, 164, 135, 0.2);
+    --grau: rgb(61, 61, 61);
 
-  --transition_slider: all 250ms ease-in-out;
+    /* PADDINGS */
+    --contentbegrenzung_landingpage: max(calc(8.93% - 8.57px), 20px);
+    --contentbegrenzung_articles: 0px max(calc(9.86% - 21.97px), 15px);
 }
