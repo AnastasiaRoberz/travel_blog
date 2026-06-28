@@ -5,16 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Travel Blog</title>
 
-        <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/standard.css" />
         <link rel="stylesheet" href="./styles/font.css" />
-        <link rel="stylesheet" href="./styles/responsive.css" />
+        <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/article_graph.css" />
-        <link rel="stylesheet" href="./styles/header_footer_nav.css" />
         <link rel="stylesheet" href="./styles/author_box.css" />
         <link rel="stylesheet" href="./styles/articles_top_section.css" />
-        <link rel="stylesheet" href="./styles/proTipps_section.css" />
+
         <link rel="stylesheet" href="./styles/header_footer_nav.css" />
+        <link rel="stylesheet" href="./styles/responsive.css" />
 
         <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
     </head>
@@ -22,56 +21,55 @@
     <body>
         <header>
             <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+            <nav class="nav_header">
+                <a href="./index.html#highlights_link">Highlights</a>
+                <a href="./article1.html">Article 1</a>
+                <a href="./article2.html">Article 2</a>
+                <a href="./article3.html">Article 3</a>
+            </nav>
         </header>
 
-        <main>
-            <section class="section_padding">
-                <p class="sub_heading">Thailand’s City That Never Sleeps</p>
-                <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
-                <span>
-                    From bustling promenades to nearby islands, the city offers
-                    an energetic and diverse escape. Discover Pattaya City, with
-                    vibrant nightlife and rich cultural landmarks.
-                </span>
-                <article class="detailstable">
-                    <div class="firstrow">
-                        <div class="innerDiv">
-                            <img
-                                class="calenderimg"
-                                src="./assets/icon/article/calendar.svg"
-                                alt="calender"
-                            />
-                            <p>Date: 26.01.2026</p>
-                        </div>
-                        <div class="innerDiv">
-                            <img
-                                class="eyeglassimg"
-                                src="./assets/icon/article/eyeglasses.svg"
-                                alt="eyeglass"
-                            />
-                            <p>Reading time: 6 min.</p>
-                        </div>
-                    </div>
-                    <div class="secondrow">
-                        <div class="innerDiv">
-                            <img
-                                class="visibilityimg"
-                                src="./assets/icon/article/visibility.svg"
-                                alt="visibility"
-                            />
-                            <p>Read: 164</p>
-                        </div>
-                        <div class="innerDiv">
-                            <img
-                                class="shareimg"
-                                src="./assets/icon/article/share.svg"
-                                alt="share"
-                            />
-                            <p>Shared: 18</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
+    <main>
+      <section class="article_head">
+        <section class="heading">
+          <p class="sub_heading">Thailand’s City That Never Sleeps</p>
+          <h3>Pattaya Pulse: Food, Sun and Neon Nights</h3>
+          <p class="prolog">
+            From bustling promenades to nearby islands, the city offers an
+            energetic and diverse escape. Discover Pattaya City, with vibrant
+            nightlife and rich cultural landmarks.
+          </p>
+        </section>
+
+        <section class="article_details">
+          <p>
+            <svg class="date_icon">
+              <use href="./assets/icon/icons.svg#icon-date"></use>
+            </svg>
+            Date: 02.04.2026
+          </p>
+
+          <p>
+            <svg class="reading_time_icon">
+              <use href="./assets/icon/icons.svg#icon-reading-time"></use>
+            </svg>
+            Reading time: 7 min.
+          </p>
+
+          <p>
+            <svg class="read_icon">
+              <use href="./assets/icon/icons.svg#icon-read"></use>
+            </svg>
+            Read: 64
+          </p>
+
+          <p>
+            <svg class="shared_icon">
+              <use href="./assets/icon/icons.svg#icon-shared"></use>
+            </svg>
+            Shared: 23
+          </p>
+        </section>
 
             <section class="padding_author_section">
                 <div class="author_card">
@@ -197,32 +195,26 @@
                 </section>
             </div>
         </footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html"
-                        ><img src="./assets/icon/Home.svg" alt="home icon"
-                    /></a>
-                </li>
-                <li>
-                    <img
+        <nav class="nav_mobile">
+            <div class="nav-links">
+                <a target="_self" href="./index.html"
+                    ><img src="./assets/icon/Home.svg" alt="home_icon"
+                /></a>
+
+                <a href="./article1.html"
+                    ><img
                         src="./assets/icon/rocket_launch.svg"
-                        alt="rocket icon"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="./assets/icon/live_help.svg"
-                        alt="live help icon"
-                    />
-                </li>
-                <li>
-                    <img
-                        src="./assets/icon/person_pin.svg"
-                        alt="person pin icon"
-                    />
-                </li>
-            </ul>
+                        alt="rocket_icon"
+                /></a>
+
+                <a href="./article2.html"
+                    ><img src="./assets/icon/questionmark.svg" alt="help_icon"
+                /></a>
+
+                <a href="./article3.html"
+                    ><img src="./assets/icon/person_pin.svg" alt="person_icon"
+                /></a>
+            </div>
         </nav>
     </body>
 </html>
