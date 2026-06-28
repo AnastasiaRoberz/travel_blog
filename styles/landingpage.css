@@ -33,9 +33,7 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 0px var(--contentbegrenzung_landingpage);
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 80px 20px;
 
     .highlights_head {
         p {
@@ -206,12 +204,12 @@
 .faq {
     width: 100%;
     max-width: 1440px;
-    padding: 0px var(--contentbegrenzung_landingpage);
+    padding: 0 20px 80px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 80px;
+
     gap: 32px;
 
     .headline {

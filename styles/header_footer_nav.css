@@ -19,7 +19,7 @@ body {
 }
 
 footer {
-    height: fit-content;
+    height: clamp(134px, 10dvh, 152px);
     width: 100%;
     background: var(--türkis);
 
@@ -27,7 +27,7 @@ footer {
     justify-content: center;
     align-items: center;
 
-    padding: 30px var(--contentbegrenzung_landingpage);
+    padding: 30px 24px;
 
     a {
         font-size: 1rem;
@@ -43,7 +43,6 @@ footer {
     }
 
     .footer_content {
-        height: 100%;
         width: 100%;
 
         display: flex;
@@ -52,20 +51,19 @@ footer {
         /* padding: 30px 20px; */
 
         .copyright_section {
-            font-size: clamp(16px, 5dvw, 18px);
-            height: 100%;
-
             display: flex;
             flex-direction: column;
             gap: 8px;
 
             .copyright_logo {
-                height: 100%;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: 4px;
+
+                p {
+                    font-size: 1rem;
+                }
 
                 img {
                     height: 20px;
@@ -75,8 +73,8 @@ footer {
         }
 
         .social_media_logo {
-            height: 100%;
             width: 45%;
+            max-width: 190px;
 
             display: flex;
             justify-content: space-between;
@@ -84,38 +82,34 @@ footer {
             padding-top: 50px;
 
             img {
-                height: 24px;
-                width: 24px;
+                height: clamp(24px, 4dvh, 32px);
+                width: clamp(24px, 4dvw, 32px);
             }
             .youtubeimg {
-                height: 24px;
-                width: 33px;
+                height: clamp(24px, 4dvh, 32px);
+                width: clamp(32px, 5dvw, 44px);
             }
         }
     }
 }
 
-nav {
+.nav_mobile {
     z-index: 3;
+
     height: 88px;
-
-    position: sticky;
     width: 100%;
-    bottom: 0;
-    max-width: 1440px;
-
     background-color: var(--gelb);
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        justify-content: space-between;
-        padding: 24px 25px;
-        background-color: var(--gelb);
-        height: 100%;
+    position: sticky;
+    bottom: 0;
 
+    .nav-links {
+        height: 100%;
         width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 35px;
 
         img {
             height: 40px;

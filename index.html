@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Travel Blog</title>
 
-        <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/standard.css" />
         <link rel="stylesheet" href="./styles/font.css" />
-        <link rel="stylesheet" href="./styles/responsive.css" />
+        <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/landingpage.css" />
         <link rel="stylesheet" href="./styles/header_footer_nav.css" />
+        <link rel="stylesheet" href="./styles/responsive.css" />
 
         <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
     </head>
@@ -18,6 +18,12 @@
     <body>
         <header>
             <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+            <nav class="nav_header">
+                <a href="#highlights_link">Highlights</a>
+                <a href="./article1.html">Article 1</a>
+                <a href="./article2.html">Article 2</a>
+                <a href="./article3.html">Article 3</a>
+            </nav>
         </header>
 
         <main>
@@ -34,7 +40,7 @@
                 </div>
             </section>
 
-            <section class="highlights">
+            <section id="highlights_link" class="highlights">
                 <section class="highlights_head">
                     <div class="highlights_headline">
                         <img
@@ -250,7 +256,7 @@
         <footer>
             <div class="footer_content">
                 <section class="copyright_section">
-                    <p>Imprint</p>
+                    <a href="./impressum.html">Imprint</a>
                     <p>Cookie Preferences</p>
                     <span class="copyright_logo">
                         <img
@@ -286,35 +292,26 @@
                 </section>
             </div>
         </footer>
-        <nav>
-            <ul>
-                <li>
-                    <a target="_self" href="./index.html"
-                        ><img src="./assets/icon/Home.svg" alt="home_icon"
-                    /></a>
-                </li>
-                <li>
-                    <a href="article1.html"
-                        ><img
-                            src="./assets/icon/rocket_launch.svg"
-                            alt="rocket_icon"
-                    /></a>
-                </li>
-                <li>
-                    <a href="http://article2.html"
-                        ><img
-                            src="./assets/icon/questionmark.svg"
-                            alt="help_icon"
-                    /></a>
-                </li>
-                <li>
-                    <a href="http://article3.html"
-                        ><img
-                            src="./assets/icon/person_pin.svg"
-                            alt="person_icon"
-                    /></a>
-                </li>
-            </ul>
+        <nav class="nav_mobile">
+            <div class="nav-links">
+                <a target="_self" href="./index.html"
+                    ><img src="./assets/icon/Home.svg" alt="home_icon"
+                /></a>
+
+                <a href="./article1.html"
+                    ><img
+                        src="./assets/icon/rocket_launch.svg"
+                        alt="rocket_icon"
+                /></a>
+
+                <a href="./article2.html"
+                    ><img src="./assets/icon/questionmark.svg" alt="help_icon"
+                /></a>
+
+                <a href="./article3.html"
+                    ><img src="./assets/icon/person_pin.svg" alt="person_icon"
+                /></a>
+            </div>
         </nav>
     </body>
 </html>
