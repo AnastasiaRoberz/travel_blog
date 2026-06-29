@@ -13,6 +13,11 @@ body {
     min-height: 100dvh;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 svg {
     fill: var(--gelb);
     flex-shrink: 0;

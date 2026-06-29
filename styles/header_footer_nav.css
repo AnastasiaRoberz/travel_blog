@@ -68,8 +68,8 @@ nav {
 
 footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: clamp(134px, 10.7dvw, 152px);
   background: var(--türkis);
@@ -77,7 +77,7 @@ footer {
   .footer_content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
     width: 100%;
     max-width: 1440px;

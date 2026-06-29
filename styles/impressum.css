@@ -1,6 +1,9 @@
 main {
   align-items: flex-start;
   gap: 32px;
+
+  width: 100%;
+  max-width: 1440px;
   padding: 24px var(--contentbegrenzung_articles);
 }
 
