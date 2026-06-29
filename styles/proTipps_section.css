@@ -1,24 +1,24 @@
-.p-top {
-  height: fit-content;
-  padding-top: 21px;
+.pro-tipps {
   width: 100%;
   max-width: 1083px;
 }
 
-.protipps_heading {
+.protipp-heading {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 8px 16px;
   gap: 8px;
 
-  background-color: var(--türkis);
-  transform: rotate(-13.67deg) translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));
   width: fit-content;
+
+  transform: translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));
+
+  background-color: var(--türkis);
+  transform: rotate(-13.67deg) translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));;
   border-radius: 10px;
 
   font-family: "Palanquin";
-  font-size: 1.75rem;
+  font-size: 28px;
   line-height: 120%;
   font-weight: 700;
   color: var(--gelb);
@@ -29,18 +29,17 @@
   }
 }
 
-.protippCard {
+.protipp-card {
+  width: 100%;
+  padding: 25px 16px;
   background-color: var(--türkisLight);
-  padding: 26px 16px;
   border-radius: 30px;
 
   .article_text {
-    margin-left: 15px;
+  margin-left: clamp(15px, calc(13.571px + 0.446vw), 20px);
   }
 
   a {
     color: var(--türkis);
   }
 }
-
-
