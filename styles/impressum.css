@@ -1,5 +1,45 @@
 main {
   align-items: flex-start;
+  gap: 32px;
 
-  
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px var(--contentbegrenzung_articles);
+}
+
+h2 {
+  align-self: center;
+  text-align: center;
+  color: var(--gelb);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  color: var(--türkis);
+}
+
+.impressum_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+
+  ul {
+    list-style-type: none;
+  }
+
+  th {
+    width: 20%;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  span {
+    font-style: italic;
+  }
+}
+
+#haftung {
+  gap: 12px;
 }

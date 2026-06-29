@@ -18,121 +18,9 @@ main {
     margin-left: 8vw;
 }
 
-.beach_destinations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 40px;
-
-    .carousel {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 350px;
-
-        overflow: hidden;
-        position: relative;
-
-        .cards {
-            display: flex;
-            width: 1000px;
-            height: 293px;
-
-            position: absolute;
-            top: 15px;
-            left: 50%;
-            margin-left: -100px;
-
-            transition: all 250ms ease-in-out;
-
-            img {
-                width: 200px;
-                height: 293px;
-                object-fit: cover;
-                border-radius: 16px;
-
-                transform: perspective(250px) rotateY(15deg) translateX(5px)
-                    scale(0.9);
-                transform-origin: 50% 50%;
-                z-index: 1;
-
-                box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
-            }
-        }
-
-        input {
-            display: none;
-        }
-
-        .slider_control {
-            position: absolute;
-            bottom: 0px;
-            display: flex;
-            gap: 8px;
-
-            label {
-                height: 22px;
-                width: 22px;
-                background: var(--türkisLight);
-                border-radius: 50px;
-                cursor: pointer;
-                transition: 250ms ease-in-out;
-            }
-        }
-
-        #element_card1:checked ~ .cards {
-            transform: translateX(0px);
-        }
-
-        #element_card2:checked ~ .cards {
-            transform: translateX(-20%);
-        }
-
-        #element_card3:checked ~ .cards {
-            transform: translateX(-40%);
-        }
-
-        #element_card4:checked ~ .cards {
-            transform: translateX(-60%);
-        }
-
-        #element_card5:checked ~ .cards {
-            transform: translateX(-80%);
-        }
-
-        #element_card1:checked ~ .cards img:nth-child(1) ~ img,
-        #element_card2:checked ~ .cards img:nth-child(2) ~ img,
-        #element_card3:checked ~ .cards img:nth-child(3) ~ img,
-        #element_card4:checked ~ .cards img:nth-child(4) ~ img {
-            transform: perspective(250px) rotateY(-15deg) translateX(-5px)
-                scale(0.9);
-        }
-
-        #element_card1:checked ~ .cards img:nth-child(1),
-        #element_card2:checked ~ .cards img:nth-child(2),
-        #element_card3:checked ~ .cards img:nth-child(3),
-        #element_card4:checked ~ .cards img:nth-child(4),
-        #element_card5:checked ~ .cards img:nth-child(5) {
-            transform: perspective(250px) rotateY(0deg) translateX(0px);
-            z-index: 2;
-        }
-
-        #element_card1:checked ~ .slider_control label:nth-child(1),
-        #element_card2:checked ~ .slider_control label:nth-child(2),
-        #element_card3:checked ~ .slider_control label:nth-child(3),
-        #element_card4:checked ~ .slider_control label:nth-child(4),
-        #element_card5:checked ~ .slider_control label:nth-child(5) {
-            width: 40px;
-            height: 22px;
-            border-radius: 50px;
-            background: var(--türkis);
-            transition: 250ms ease-in-out;
-        }
-    }
+main {
+  max-width: 1440px;
+  padding: clamp(24px, 5.5vw, 80px) var(--contentbegrenzung_articles);
 }
 
 .article_2 {
@@ -140,13 +28,10 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    max-width: 1440px;
-    width: 100%;
-    padding-top:20px;
-    
-    .iframe_wrapper {
-        width: 345px;
-        height: 193px;
+
+  .iframe_wrapper {
+    width: clamp(345px, calc(177.571px + 52.321vw), 931px);
+    height: clamp(193px, calc(99.571px + 29.196vw), 520px);
 
         iframe {
             width: 100%;
@@ -161,52 +46,96 @@ main {
     }
 }
 
-.pattaya_pulse {
+.article3 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+  flex-direction: column;
+  align-items: center;
+    line-height: 120%;
+
+    h4 {
+        text-align: center;
+    }
 
     img {
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
         border-radius: 30px;
         box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
     }
 
+/* .article3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  img {
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+  } */
+
     .rain-periods {
+        padding: 32px 0px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 24px;
+
+        h4 {
+            padding-bottom: 24px;
+        }
 
         img {
             width: 345px;
             height: 183px;
         }
     }
+    /* img {
+      width: clamp(345px, calc(260.714px + 26.339vw), 640px);
+      height: clamp(183px, calc(110.714px + 22.589vw), 436px);
+    } */
+  }
 
-    .beach-activities {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
+    .diagrams_bottom {
+        .beach-activities {
+            padding: 32px 0px;
 
-        img {
-            width: 343px;
-            height: 311px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 16px;
+
+            img {
+                width: 343px;
+                height: 311px;
+
+                object-fit: cover;
+            }
+        }
+    /* img {
+      width: clamp(343px, calc(292.714px + 15.714vw), 519px);
+      height: clamp(311px, calc(265.286px + 14.286vw), 471px);
+    } */
+  }
+
+        .expenses {
+            padding-bottom: 32px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 16px;
+
+            img {
+                width: 343px;
+                height: 311px;
+            }
         }
     }
-
-    .expenses {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-
-        img {
-            width: 343px;
-            height: 311px;
-        }
-    }
+    /* img {
+      width: clamp(343px, calc(292.714px + 15.714vw), 519px);
+      height: clamp(311px, calc(265.286px + 14.286vw), 471px);
+    } */
+  }
 }

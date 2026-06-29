@@ -8,151 +8,187 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/font.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/header_footer_nav.css" />
     <link rel="stylesheet" href="./styles/impressum.css" />
+    <link rel="stylesheet" href="./styles/responsivev2.css" />
 
     <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img src="./assets/png/favicon.svg" alt="travel blog logo" />
-      </a>
-    </header>
+      <div class="header_wrapper">
+        <a href="index.html">
+          <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+        </a>
 
+        <nav>
+          <div class="nav_wrapper">
+            <a target="_self" href="./index.html">
+              <p class="nav_text">Highlights</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-home"></use>
+              </svg>
+            </a>
+
+            <a target="_self" href="./article1.html">
+              <p class="nav_text">Artikel 1</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-rocket"></use>
+              </svg>
+            </a>
+
+            <a target="_self" href="./article2.html">
+              <p class="nav_text">Artikel 2</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+              </svg>
+            </a>
+
+            <a target="_self" href="./article3.html">
+              <p class="nav_text">Artikel 3</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-person"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <h2>Impressum</h2>
 
-      <h3>Angaben gemäß § 5 TMG</h3>
-      <p>
-        Die Drei Code-Touristinnen GmbH „Hauptabteilung für chronisches Fernweh
-        und CSS-Flexbox-Verzweiflung“ Route 404 (Ecke Git-Branch-Allee)
-      </p>
-      <p>70173 Stuttgart</p>
-      <p>
-        Vertreten durch: Die Frontend-Reisegruppe (Dreier-Gestirn der
-        Web-Entwicklung)
-      </p>
-
-      <h3>Kontakt</h3>
-      <table>
-        <tr>
-          <th>Telefon:</th>
-          <td>555-NASE</td>
-        </tr>
-        <tr>
-          <th>E-Mail:</th>
-          <td>mädels-am-strand@code-and-travel.de</td>
-        </tr>
-        <tr>
-          <th>Telefax:</th>
-          <td>Wurde am Flughafen wegen Übergepäck zurückgelassen.</td>
-        </tr>
-      </table>
-
-      <h3>Registereintrag</h3>
-      <p>
-        Eintragung im Handelsregister: * Registergericht: Amtsgericht
-        Urlaubsreif
-      </p>
-      <p>Registernummer: HRB 3-MAEDELS-2026</p>
-
-      <h3>Umsatzsteuer-ID</h3>
-      <p>
-        Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE
-        123-REISE-LUST
-      </p>
-
-      <h3>Redaktionell verantwortlich</h3>
-      <p>
-        Die Redaktions-Crew (Inhaltlich verantwortlich für Fernweh und
-        Code-Qualität):
-      </p>
-      <ul>
-        <li>Reiseleitung & Layout-Check: Anika Mayer</li>
-        <li>Gepäckkontrolle & JavaScript-Scouting: Shri</li>
-        <li>Bordverpflegung & HTML-Struktur: Anastasia Roberz</li>
-      </ul>
-      <p>Route 404<br />70173 Stuttgart</p>
-
-      <h3>Haftungsausschluss (Disclaimer)</h3>
-      <h4>Haftung für Inhalte</h4>
-      <p>
-        Die Inhalte unseres Reiseblogs wurden mit größter Sorgfalt und viel
-        Kaffee erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der
-        Code-Schnipsel können wir jedoch keine Gewähr übernehmen. Insbesondere
-        haften wir nicht für spontane Urlaubsanträge, die beim Lesen unserer
-        Beiträge entstehen, oder für Nervenzusammenbrüche, die durch
-        zerschossene CSS-Grid-Layouts ausgelöst werden.
-      </p>
-
-      <h4>Haftung für Links</h4>
-      <p>
-        Unser Blog enthält Links zu externen Websites (z. B. GitHub, Stack
-        Overflow oder virtuellen Sandstränden). Auf deren Inhalte haben wir
-        keinen Einfluss. Sollte sich ein Link im Nachhinein als Sackgasse oder
-        Endlosschleife herausstellen, bitten wir um Nachsicht – wir haben beim
-        Programmieren wohl schon Cocktails geschlürft.
-      </p>
-    </main>
-
-        <footer>
-      <section class="copyright_section">
-        <p>Imprint</p>
-        <p>Cookie Preferences</p>
-        <p class="copyright">
-          <svg class="svg_small">
-            <use
-              class="icon_copyright"
-              href="./assets/icon/icons.svg#icon-copyright"
-            ></use>
-          </svg>
-          Travel Blog 2026
+      <section class="impressum_content">
+        <h3>Angaben gemäß § 5 TMG</h3>
+        <p class="article_text">
+          <span class="article_bold">Die Drei Code-Touristinnen GmbH</span>
+          <br />
+          <span
+            >Hauptabteilung für chronisches Fernweh und
+            CSS-Flexbox-Verzweiflung</span
+          >
+          <br />
+          Route 404 (Ecke Git-Branch-Allee) <br />
+          127001 Localhost
         </p>
       </section>
 
-      <section class="social_media_logo">
-        <a target="_blank" href="https://www.tiktok.com/">
-          <svg class="svg_medium">
-            <use href="./assets/icon/icons.svg#icon-tiktok"></use>
-          </svg>
-        </a>
-        <a target="_blank" href="https://www.youtube.com/">
-          <svg class="svg_youtube">
-            <use href="./assets/icon/icons.svg#icon-youtube"></use>
-          </svg>
-        </a>
-        <a target="_blank" href="https://www.facebook.com/">
-          <svg class="svg_medium">
-            <use href="./assets/icon/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/">
-          <svg class="svg_medium">
-            <use href="./assets/icon/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
+      <section class="impressum_content">
+        <h3>Kontakt</h3>
+        <table class="article_text">
+          <tr>
+            <th class="article_bold">Telefon:</th>
+            <td>555-NASE</td>
+          </tr>
+          <tr>
+            <th class="article_bold">E-Mail:</th>
+            <td>mädels-am-strand@code-and-travel.de</td>
+          </tr>
+          <tr>
+            <th class="article_bold">Telefax:</th>
+            <td>Wurde am Flughafen wegen Übergepäck zurückgelassen.</td>
+          </tr>
+        </table>
       </section>
+
+      <section class="impressum_content">
+        <h3>Registereintrag</h3>
+        <p class="article_text">
+          Eintragung im Handelsregister: <br />
+          Registergericht: Amtsgericht Urlaubsreif <br />
+          Registernummer: HRB 3-MAEDELS-2026
+        </p>
+      </section>
+
+      <section class="impressum_content">
+        <h3>Umsatzsteuer-ID</h3>
+        <p class="article_text">
+          Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz:
+          <br />
+          DE123-REISE-LUST
+        </p>
+      </section>
+
+      <section class="impressum_content">
+        <h3>Redaktionell verantwortlich</h3>
+        <div class="verantwortliche_wrapper">
+          <p class="article_text">
+            Die Redaktions-Crew (Inhaltlich verantwortlich für Fernweh und
+            Code-Qualität):
+          </p>
+
+          <ul class="article_text">
+            <li>Reiseleitung & Layout-Check: Anika Mayer</li>
+            <li>Gepäckkontrolle & Box-Modell-Inspection: Bhagyashri Deore</li>
+            <li>Bordverpflegung & HTML-Struktur: Anastasia Roberz</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="impressum_content" id="haftung">
+        <h3>Haftungsausschluss (Disclaimer)</h3>
+        <section class="haftung">
+          <h4>Haftung für Inhalte</h4>
+          <p class="article_text">
+            Die Inhalte unseres Reiseblogs wurden mit größter Sorgfalt und viel
+            Kaffee erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität
+            der Code-Schnipsel können wir jedoch keine Gewähr übernehmen.
+            Insbesondere haften wir nicht für spontane Urlaubsanträge, die beim
+            Lesen unserer Beiträge entstehen, oder für Nervenzusammenbrüche, die
+            durch zerschossene CSS-Layouts ausgelöst werden.
+          </p>
+        </section>
+
+        <section class="haftung">
+          <h4>Haftung für Links</h4>
+          <p class="article_text">
+            Unser Blog enthält Links zu externen Websites. Auf deren Inhalte
+            haben wir keinen Einfluss. Sollte sich ein Link im Nachhinein als
+            Sackgasse oder Endlosschleife herausstellen, bitten wir um Nachsicht
+            – wir haben beim Programmieren wohl schon Cocktails geschlürft.
+          </p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_content">
+        <section class="copyright_section">
+          <a href="./impressum.html">Imprint</a>
+          <p>Cookie Preferences</p>
+          <p class="copyright">
+            <svg class="svg_small">
+              <use
+                class="icon_copyright"
+                href="./assets/icon/icons.svg#icon-copyright"
+              ></use>
+            </svg>
+            Travel Blog 2026
+          </p>
+        </section>
+
+        <section class="social_media_logo">
+          <a target="_blank" href="https://www.tiktok.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-tiktok"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/">
+            <svg class="svg_youtube">
+              <use href="./assets/icon/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </section>
+      </div>
     </footer>
-
-    <nav>
-      <a target="_self" href="./index.html">
-        <svg class="svg_large">
-          <use href="./assets/icon/icons.svg#icon-home"></use>
-        </svg>
-      </a>
-
-      <svg class="svg_large">
-        <use href="./assets/icon/icons.svg#icon-rocket"></use>
-      </svg>
-
-      <svg class="svg_large">
-        <use href="./assets/icon/icons.svg#icon-questionmark"></use>
-      </svg>
-
-      <svg class="svg_large">
-        <use href="./assets/icon/icons.svg#icon-person"></use>
-      </svg>
-    </nav>
   </body>
 </html>

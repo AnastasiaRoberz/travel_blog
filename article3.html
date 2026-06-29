@@ -8,22 +8,55 @@
         <link rel="stylesheet" href="./styles/variables.css" />
         <link rel="stylesheet" href="./styles/standard.css" />
         <link rel="stylesheet" href="./styles/font.css" />
-        <link rel="stylesheet" href="./styles/responsive.css" />
-        <link rel="stylesheet" href="./styles/articles.css" />
         <link rel="stylesheet" href="./styles/header_footer_nav.css" />
+        <link rel="stylesheet" href="./styles/articles.css" />
         <link rel="stylesheet" href="./styles/articles_top_section.css" />
         <link rel="stylesheet" href="./styles/proTipps_section.css" />
-        <link rel="stylesheet" href="./styles/header_footer_nav.css" />
+        <link rel="stylesheet" href="./styles/responsivev2.css" />
 
         <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
     </head>
 
-    <body>
-        <header>
-            <a href="index.html">
-                <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <a href="index.html">
+          <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+        </a>
+
+        <nav>
+          <div class="nav_wrapper">
+            <a target="_self" href="./index.html">
+              <p class="nav_text">Highlights</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-home"></use>
+              </svg>
             </a>
-        </header>
+
+            <a target="_self" href="./article1.html">
+              <p class="nav_text">Artikel 1</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-rocket"></use>
+              </svg>
+            </a>
+
+            <a target="_self" href="./article2.html">
+              <p class="nav_text">Artikel 2</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+              </svg>
+            </a>
+
+            <a target="_self" href="./article3.html">
+              <p class="nav_text">Artikel 3</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-person"></use>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
         <main>
             <section class="article_head">
@@ -42,44 +75,36 @@
                             </p>
                         </section>
 
-                        <section class="article_details">
-                            <p>
-                                <svg class="date_icon">
-                                    <use
-                                        href="./assets/icon/icons.svg#icon-date"
-                                    ></use>
-                                </svg>
-                                Date: 02.04.2026
-                            </p>
+          <section class="article_details">
+            <p>
+              <svg class="date_icon">
+                <use href="./assets/icon/icons.svg#icon-date"></use>
+              </svg>
+              Date: 26.01.2026
+            </p>
 
-                            <p>
-                                <svg class="reading_time_icon">
-                                    <use
-                                        href="./assets/icon/icons.svg#icon-reading-time"
-                                    ></use>
-                                </svg>
-                                Reading time: 7 min.
-                            </p>
+            <p>
+              <svg class="reading_time_icon">
+                <use href="./assets/icon/icons.svg#icon-reading-time"></use>
+              </svg>
+              Reading time: 6 min.
+            </p>
 
-                            <p>
-                                <svg class="read_icon">
-                                    <use
-                                        href="./assets/icon/icons.svg#icon-read"
-                                    ></use>
-                                </svg>
-                                Read: 64
-                            </p>
+            <p>
+              <svg class="read_icon">
+                <use href="./assets/icon/icons.svg#icon-read"></use>
+              </svg>
+              Read: 164
+            </p>
 
-                            <p>
-                                <svg class="shared_icon">
-                                    <use
-                                        href="./assets/icon/icons.svg#icon-shared"
-                                    ></use>
-                                </svg>
-                                Shared: 23
-                            </p>
-                        </section>
-                    </div>
+                    <p>
+              <svg class="shared_icon">
+                <use href="./assets/icon/icons.svg#icon-shared"></use>
+              </svg>
+              Shared: 18
+            </p>
+          </section>
+        </div>
 
                     <section class="author_card">
                         <img
@@ -100,58 +125,19 @@
                 </div>
             </section>
 
-            <article class="pattaya_pulse">
+            <article class="article3">
                 <p class="article_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rem, ducimus pariatur cum, tempore provident nihil
-                    necessitatibus eos nemo quam laboriosam quis accusamus
-                    officia magnam! Necessitatibus voluptatem deleniti officiis
-                    accusamus adipisci.
+                    Lorem ipsum dolor sit amet consectetur. Egestas a enim
+                    vestibulum malesuada. Ante in commodo porta scelerisque
+                    turpis gravida semper. Lorem ipsum dolor sit amet
+                    consectetur. Egestas a enim vestibulum malesuada. Ante in
+                    commodo porta scelerisque turpis gravida semper.
                 </p>
-
                 <div class="rain-periods">
                     <h4>Rain periods in Pattaya</h4>
                     <img
                         src="./assets/png/diagrams/graph_rainperiods.png"
                         alt="rain_periods_chart"
-                    />
-                </div>
-
-                <p class="article_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro velit inventore hic? Cumque, perspiciatis! Sapiente,
-                    quas eveniet. Eligendi, eius explicabo sit, quia sapiente
-                    necessitatibus tenetur a dignissimos quibusdam aliquam
-                    consequuntur?
-                </p>
-
-                <div class="beach-activities">
-                    <h4>Popular beach activities</h4>
-                    <p class="article_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ratione, ut sed voluptatum quam officiis eos vitae,
-                        distinctio, tempora odit soluta consequatur repudiandae!
-                        Est corporis iusto maxime expedita, quasi sunt iste?
-                    </p>
-
-                    <img
-                        src="./assets/png/diagrams/graph_beach_activities.png"
-                        alt="beach_activities_chart"
-                    />
-                </div>
-
-                <div class="expenses">
-                    <h4>Accommodation expenses</h4>
-                    <p class="article_text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Eum dolore dolorem tempora expedita possimus
-                        praesentium iure ut numquam dignissimos doloremque,
-                        consequuntur totam temporibus labore eligendi illum
-                        nostrum quidem itaque consequatur.
-                    </p>
-                    <img
-                        src="./assets/png/diagrams/graph_accomodations.png"
-                        alt="accommodation_expenses_chart"
                     />
                 </div>
                 <p class="article_text">
@@ -160,77 +146,101 @@
                     turpis gravida semper. Lorem ipsum dolor sit amet
                     consectetur. Egestas a enim vestibulum malesuada. Eta
                     scelerisque turpis gravida semper. Lorem ipsum dolor sit
-                    amet consectetur. <br />
-                    Egestas a enim vestibulum malesuada. Ante in commodo porta
-                    scelerisque turpis gravida semper. Lorem ipsum dolor sit
-                    amet consectetur. Egestas a enim vestibulum malesuada. Ante
-                    in commodo porta scelerisque turpis gravida semper. Lorem
-                    ipsum dolor sit ameta enim vestibulum malesuada. Antenes
-                    intrew commodo porta scelerisque turpis. ipsum dolor sit
-                    ametert consectetur. Egestas a enim vestibulum malesuada.
-                    Ante in comm odo porta scelerisque turpis gravida semper.
+                    ameta enim vestibulum malesuada. Antenes intrew commodo
+                    porta scelerisque turpis. ipsum dolor sit ametert
+                    consectetur. Egestas a enim vestibulum malesuada. Ante in
+                    comm odo porta scelerisque turpis gravida semper.
                 </p>
+                <div class="diagrams_bottom">
+                    <div class="beach-activities">
+                        <div class="text_expenses">
+                        <h4>Popular beach activities</h4>
+                        <p class="article_text">
+                            Lorem ipsum dolor sit amet consectetur. Egestas a
+                            enim vestibulum malesuada. Ante in commodo porta
+                            scelerisque turpis gravida semper. Lorem ipsum dolor
+                            sit amet consectetur. Egestas a enim vestibulum
+                            malesuada. Eta scelerisque turpis gravida semper.
+                        </p>
+                        </div>
+                        <img
+                            src="./assets/png/diagrams/graph_beach_activities.png"
+                            alt="beach_activities_chart"
+                        />
+                    </div>
+                    <div class="expenses">
+                        <div class="text_expenses"><h4>Accommodation expenses</h4>
+                        <p class="article_text">
+                            Dolor sit amet consectetur. Egestas a enim vesti
+                            bulum malesuada. Ante in commodo porta sceleri sque
+                            turpis gravida semper. Lorem ipsum dolor sit amet
+                            consectetur. Egestas a enim vestibulum malesuada.
+                        </p>
+                        </div>
+                        <img
+                            src="./assets/png/diagrams/graph_accomodations.png"
+                            alt="accommodation_expenses_chart"
+                        />
+                    </div>
+                    </div>
+                    <p class="article_text">
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim
+                        vestibulum malesuada. Ante in commodo porta scelerisque
+                        turpis gravida semper. Lorem ipsum dolor sit amet
+                        consectetur. Egestas a enim vestibulum malesuada. Eta
+                        scelerisque turpis gravida semper. Lorem ipsum dolor sit
+                        amet consectetur. Egestas a enim vestibulum malesuada.
+                        Ante in commodo porta scelerisque turpis gravida semper.
+                        Lorem ipsum dolor sit amet consectetur. Egestas a enim
+                        vestibulum malesuada. Ante in commodo porta scelerisque
+                        turpis gravida semper. Lorem ipsum dolor sit ameta enim
+                        vestibulum malesuada. Antenes intrew commodo porta
+                        scelerisque turpis. ipsum dolor sit ametert consectetur.
+                        Egestas a enim vestibulum malesuada. Ante in comm odo
+                        porta scelerisque turpis gravida semper.
+                    </p>
+                </div>
             </article>
         </main>
         <footer>
-            <section class="copyright_section">
-                <p>Imprint</p>
-                <p>Cookie Preferences</p>
-                <p class="copyright">
-                    <svg class="svg_small">
-                        <use
-                            class="icon_copyright"
-                            href="./assets/icon/icons.svg#icon-copyright"
-                        ></use>
-                    </svg>
-                    Travel Blog 2026
-                </p>
-            </section>
-
-            <section class="social_media_logo">
-                <a target="_blank" href="https://www.tiktok.com/">
-                    <svg class="svg_medium">
-                        <use href="./assets/icon/icons.svg#icon-tiktok"></use>
-                    </svg>
-                </a>
-                <a target="_blank" href="https://www.youtube.com/">
-                    <svg class="svg_youtube">
-                        <use href="./assets/icon/icons.svg#icon-youtube"></use>
-                    </svg>
-                </a>
-                <a target="_blank" href="https://www.facebook.com/">
-                    <svg class="svg_medium">
-                        <use href="./assets/icon/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/">
-                    <svg class="svg_medium">
-                        <use
-                            href="./assets/icon/icons.svg#icon-instagram"
-                        ></use>
-                    </svg>
-                </a>
-            </section>
-        </footer>
-
-        <nav>
-            <a target="_self" href="./index.html">
-                <svg class="svg_large">
-                    <use href="./assets/icon/icons.svg#icon-home"></use>
-                </svg>
-            </a>
-
-            <svg class="svg_large">
-                <use href="./assets/icon/icons.svg#icon-rocket"></use>
+      <div class="footer_content">
+        <section class="copyright_section">
+          <a href="./impressum.html">Imprint</a>
+          <p>Cookie Preferences</p>
+          <p class="copyright">
+            <svg class="svg_small">
+              <use
+                class="icon_copyright"
+                href="./assets/icon/icons.svg#icon-copyright"
+              ></use>
             </svg>
+            Travel Blog 2026
+          </p>
+        </section>
 
-            <svg class="svg_large">
-                <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+        <section class="social_media_logo">
+          <a target="_blank" href="https://www.tiktok.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-tiktok"></use>
             </svg>
-
-            <svg class="svg_large">
-                <use href="./assets/icon/icons.svg#icon-person"></use>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/">
+            <svg class="svg_youtube">
+              <use href="./assets/icon/icons.svg#icon-youtube"></use>
             </svg>
-        </nav>
-    </body>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/">
+            <svg class="svg_medium">
+              <use href="./assets/icon/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </body>
 </html>
