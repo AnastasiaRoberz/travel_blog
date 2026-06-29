@@ -1,7 +1,18 @@
 @media screen and (max-width: 480px) {
-    .nav_text {
-        display: none;
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 193px !important;
+        }
     }
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 193px !important;
+            padding: 0px 20px;
+        }
+    }
+}
 
     .headline_hero {
         display: none;
@@ -20,16 +31,59 @@
         line-clamp: 3;
         -webkit-box-orient: vertical;
     }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .nav_text {
-        display: none;
+    .list {
+        .article_text li {
+            margin-left: 5vw;
+        }
     }
-
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 250px !important;
+            padding: 0px 30px;
+        }
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
+    .article_2 {
+        .iframe_wrapper {
+            width: 600px !important;
+            height: 300px !important;
+            margin: 20px;
+        }
+    }
+    .article_head {
+        .res_article_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            .info-div {
+                width: 65%;
+                height: fit-content;
+            }
+        }
+        .article_details {
+            padding-top: 20px;
+        }
+    }
+    .author_card {
+        width: 35%;
+        height: fit-content;
+        margin-top: unset;
+    }
+    .p-top {
+        padding: 88px 33px;
+    }
+    .protippCard {
+        padding: 26px 16px 24px 16px;
+    }
+    .list {
+        .article_text li {
+            margin-left: 3vw;
+        }
+    }
     .nav_icon {
         display: none;
     }
@@ -155,6 +209,50 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1440px) {
+    .article_2 {
+        max-width: 1440px;
+        width: 100%;
+        .iframe_wrapper {
+            width: 931px !important;
+            height: 520px !important;
+            margin: 50px
+        }
+    }
+    .article_head {
+        .res_article_head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            max-width: 1440px;
+            width: 100%;
+            .info-div {
+                width: 75%;
+                height: fit-content;
+            }
+        }
+        .article_details {
+            padding-top: 20px;
+        }
+    }
+    .author_card {
+        width: 25%;
+        height: fit-content;
+        margin-top: unset;
+    }
+    .p-top {
+        padding: 88px 33px 34vh;
+        max-width: 1440px;
+        width: 100%;
+    }
+    .protippCard {
+        padding: 26px 16px 24px 16px;
+    }
+    .list {
+        .article_text li {
+            margin-left: 3vw;
+        }
+    }
     .nav_icon {
         display: none;
     }
