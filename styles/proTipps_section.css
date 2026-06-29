@@ -1,5 +1,8 @@
 .p-top {
   height: fit-content;
+  padding-top: 21px;
+  width: 100%;
+  max-width: 1083px;
 }
 
 .protipps_heading {
@@ -10,7 +13,7 @@
   gap: 8px;
 
   background-color: var(--türkis);
-  transform: rotate(-13.67deg);
+  transform: rotate(-13.67deg) translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));
   width: fit-content;
   border-radius: 10px;
 

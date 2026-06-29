@@ -1,126 +1,129 @@
-.article_head {
+.article-head {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
-  margin-bottom: 40px;
 
-  .heading_wrapper {
+  width: 100%;
+  max-width: 1440px;
+
+  .info-div {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      .sub_heading {
+        font-family: Palanquin;
+        font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+        font-weight: 600;
+        line-height: 120%;
+        color: var(--türkis);
+      }
+
+      .prolog {
+        font-family: Palanquin;
+        font-size: clamp(1.13rem, 2.2vw, 2rem);
+        font-weight: 400;
+        line-height: 120%;
+        color: var(--braun);
+      }
+    }
+
+    .article_details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+
+      .details-text {
+        font-family: Palanquin;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 120%;
+        color: var(--braun);
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        white-space: nowrap;
+
+        svg {
+          fill: var(--türkis);
+        }
+
+        .date_icon {
+          width: 16px;
+          height: 18px;
+        }
+
+        .reading_time_icon {
+          width: 20px;
+          height: 7px;
+        }
+
+        .read_icon {
+          width: 20px;
+          height: 14px;
+        }
+
+        .shared_icon {
+          width: 16px;
+          height: 18px;
+        }
+      }
+    }
   }
 
-  .heading {
+  .author-card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    flex-wrap: wrap;
-
-    .sub_heading {
-      font-family: Palanquin;
-      color: var(--türkis);
-      font-weight: 600;
-      font-size: clamp(1.25rem, 2.5vw, 2.5rem);
-      line-height: 120%;
-    }
-
-    .prolog {
-      font-family: Palanquin;
-      font-weight: 400;
-      font-size: clamp(1.13rem, 2.2vw, 2rem);
-      line-height: 120%;
-      color: var(--braun);
-    }
-  }
-}
-
-.article_details {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  gap: 8px 16px;
-  /* added by shree for handing it */
-  margin-top: 24px;
-
-  p {
-    font-family: Palanquin;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 120%;
-    color: var(--braun);
-
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 6px;
-
-    .date_icon {
-      width: 16px;
-      height: 18px;
-      fill: var(--türkis);
+    text-align: center;
+    padding: 16px 8px;
+    gap: 16px;
+  
+    border-radius: 30px;
+    background-color: var(--türkisLight);
+  
+    img {
+      width: 120px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 75% center;
     }
-
-    .reading_time_icon {
-      width: 20px;
-      height: 7px;
-      fill: var(--türkis);
-    }
-
-    .read_icon {
-      width: 20px;
-      height: 14px;
-      fill: var(--türkis);
-    }
-
-    .shared_icon {
-      width: 16px;
-      height: 18px;
-      fill: var(--türkis);
+  
+    .author-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+  
+      .author-name {
+        font-family: Arima;
+        font-size: clamp(1rem, 1.2vw, 1.3rem);
+        line-height: 120%;
+        color: var(--braun);
+  
+        .name {
+          font-weight: 700;
+        }
+        .job_title {
+          font-weight: 400;
+        }
+      }
+  
+      .article_text {
+        font-size: 1rem;
+      }
     }
   }
 }
 
-.author_card {
-  background-color: var(--türkisLight);
-  padding: 16px ;
-  text-align: center;
-  border-radius: 30px;
-.alignment{
-  text-align: left;
-}
-  /* added by shree for handing it */
-  margin-top: 24px;
-  img {
-    width: 120px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 75% center;
-
-    margin-bottom: 16px;
-  }
-
-  .name {
-    font-family: Arima;
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
-    font-weight: 700;
-    color: var(--braun);
-  }
-
-  .job_title {
-    font-family: Arima;
-    font-weight: 400;
-    font-size: clamp(1rem, 1.2vw, 1.3rem);
-    line-height: 120%;
-    color: var(--braun);
-    margin-bottom: 8px;
-  }
-
-  p {
-    font-family: Palanquin;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 120%;
-    color: var(--braun);
-    
-  }
-}

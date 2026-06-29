@@ -7,6 +7,15 @@
     display: none;
   }
 
+  .list {
+  width: 100%;
+  padding: 0px clamp(50px, calc(-73.077px + 12.019vw), 100px);
+
+  ol {
+    margin-left: 24px;
+  }
+}
+
   .headline_hero {
     display: none;
   }
