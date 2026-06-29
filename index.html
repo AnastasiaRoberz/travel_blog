@@ -1,280 +1,295 @@
 <!doctype html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Travel Blog</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
 
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/font.css" />
     <link rel="stylesheet" href="./styles/header_footer_nav.css" />
     <link rel="stylesheet" href="./styles/landingpage.css" />
-    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/responsivev2.css" />
 
-        <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
-    </head>
+    <link rel="icon" type="image/x-icon" href="./assets/png/favicon.svg" />
+  </head>
 
-    <body>
-        <header>
-            <img src="./assets/png/favicon.svg" alt="travel blog logo" />
-            <nav class="nav_header">
-                <a href="#highlights_link">Highlights</a>
-                <a href="./article1.html">Article 1</a>
-                <a href="./article2.html">Article 2</a>
-                <a href="./article3.html">Article 3</a>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <a href="index.html">
+          <img src="./assets/png/favicon.svg" alt="travel blog logo" />
+        </a>
 
-        <main>
-            <section class="hero">
-                <div class="yellow_swirl">
-                    <div class="headline_hero">
-                        <h1>Cappadocia</h1>
-                        <p>
-                            From sunrise balloons to hidden cave dwellings,
-                            every moment feels unreal in the best way.
-                        </p>
-                    </div>
-                    <img src="./assets/png/Circle.svg" alt="Turkey_logo" />
-                </div>
-            </section>
-
-            <section id="highlights_link" class="highlights">
-                <section class="highlights_head">
-                    <div class="highlights_headline">
-                        <img
-                            id="rocket_highlights"
-                            src="./assets/icon/rocket.svg"
-                            alt="rocket_icon"
-                        />
-                        <h2>Highlights</h2>
-                    </div>
-                    <p>
-                        From the vibrant cultures of Asia to the sun-drenched
-                        islands of the Caribbean and the serene landscapes of
-                        Scandinavia, each destination offers a distinct way to
-                        explore the world.
-                    </p>
-                </section>
-                <section class="slider_highlights">
-                    <input
-                        type="radio"
-                        name="slider_highlights"
-                        id="element_beach"
-                        value="beach"
-                        checked
-                    />
-                    <input
-                        type="radio"
-                        name="slider_highlights"
-                        id="element_copenhagen"
-                        value="copenhagen"
-                    />
-                    <input
-                        type="radio"
-                        name="slider_highlights"
-                        id="element_pattaya"
-                        value="pattaya"
-                    />
-                    <input
-                        type="radio"
-                        name="slider_highlights"
-                        id="element_fuji"
-                        value="fuji"
-                    />
-                    <div class="slider_control">
-                        <label for="element_beach" checked></label>
-                        <label for="element_copenhagen"></label>
-                        <label for="element_pattaya"></label>
-                        <label for="element_fuji"></label>
-                    </div>
-
-          <div class="slider_highlights_wrapper">
-            <a class="slide" href="article1.html">
-              <img
-                class="slider_highlights_element"
-                src="./assets/png/beach.png"
-                alt="beach_img"
-              />
-              <div class="slider_text">
-                <p class="headline">The World’s Most Breathtaking Beaches</p>
-                <p>
-                  From powder-soft white sands to dramatic coastlines kissed by
-                  turquoise waves, these ...
-                </p>
-              </div>
+        <nav>
+          <div class="nav_wrapper">
+            <a target="_self" href="./index.html">
+              <p class="nav_text">Highlights</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-home"></use>
+              </svg>
             </a>
 
-            <a class="slide" href="article2.html">
-              <img
-                class="slider_highlights_element"
-                src="./assets/png/copenhagen.png"
-                alt="copenhagen_img"
-              />
-              <div class="slider_text">
-                <p class="headline">
-                  Copenhagen in 3 Days: Big Experiences, Smart Spending
-                </p>
-                <p>
-                  Discover Copenhagen, where historic charm meets modern design,
-                  vibrant cycling culture and waterfront living.
-                </p>
-              </div>
+            <a target="_self" href="./article1.html">
+              <p class="nav_text">Artikel 1</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-rocket"></use>
+              </svg>
             </a>
 
-            <a class="slide" href="article3.html">
-              <img
-                class="slider_highlights_element"
-                src="./assets/png/pattaya.png"
-                alt="pattaya_img"
-              />
-              <div class="slider_text">
-                <p class="headline">Pattaya Pulse: Food, Sun and Neon Nights</p>
-                <p>
-                  From bustling promenades to nearby islands, the city offers an
-                  energetic and diverse escape. Discover Pattaya City, with
-                  vibrant nightlife and rich cultural landmarks.
-                </p>
-              </div>
+            <a target="_self" href="./article2.html">
+              <p class="nav_text">Artikel 2</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+              </svg>
             </a>
 
-            <a class="slide" href="article2.html">
-              <img
-                class="slider_highlights_element"
-                src="./assets/png/fuji.png"
-                alt="fuji_img"
-              />
-              <div class="slider_text">
-                <p class="headline">Mountain Fuji</p>
-                <p>
-                  The most iconic mountain and an active volcano located about
-                  100 kilometers southwest of Tokyo. Written with the characters
-                  for “wealth” and “samurai,” Fuji’s name evokes a sense of
-                  strength, honor, and enduring prestige.
-                </p>
-              </div>
+            <a target="_self" href="./article3.html">
+              <p class="nav_text">Artikel 3</p>
+              <svg class="svg_large nav_icon">
+                <use href="./assets/icon/icons.svg#icon-person"></use>
+              </svg>
             </a>
           </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="yellow_swirl">
+          <div class="headline_hero">
+            <h1>Cappadocia</h1>
+            <p>
+              From sunrise balloons to hidden cave dwellings, every moment feels
+              unreal in the best way.
+            </p>
+          </div>
+          <img src="./assets/png/Circle.svg" alt="Turkey_logo" />
+        </div>
+      </section>
+
+      
+      <section class="landingpage_wrapper">
+          <section id="highlights_link" class="highlights">
+            <section class="highlights_head">
+              <h2>
+                <svg class="svg_large">
+                  <use href="./assets/icon/icons.svg#icon-rocket"></use>
+                </svg>
+                Highlights
+              </h2>
+    
+              <p>
+                From the vibrant cultures of Asia to the sun-drenched islands of the
+                Caribbean and the serene landscapes of Scandinavia, each destination
+                offers a distinct way to explore the world.
+              </p>
+            </section>
+          <section class="slider_highlights">
+            <input
+              type="radio"
+              name="slider_highlights"
+              id="element_beach"
+              value="beach"
+              checked
+            />
+            <input
+              type="radio"
+              name="slider_highlights"
+              id="element_copenhagen"
+              value="copenhagen"
+            />
+            <input
+              type="radio"
+              name="slider_highlights"
+              id="element_pattaya"
+              value="pattaya"
+            />
+            <input
+              type="radio"
+              name="slider_highlights"
+              id="element_fuji"
+              value="fuji"
+            />
+            <div class="slider_control">
+              <label for="element_beach" checked></label>
+              <label for="element_copenhagen"></label>
+              <label for="element_pattaya"></label>
+              <label for="element_fuji"></label>
+            </div>
+
+            <div class="slider_highlights_wrapper">
+              <a class="slide" href="article1.html">
+                <img
+                  class="slider_highlights_element"
+                  src="./assets/png/beach.png"
+                  alt="beach_img"
+                />
+                <div class="slider_text">
+                  <p class="headline">The World’s Most Breathtaking Beaches</p>
+                  <p>
+                    From powder-soft white sands to dramatic coastlines kissed
+                    by turquoise waves, these ...
+                  </p>
+                </div>
+              </a>
+
+              <a class="slide" href="article2.html">
+                <img
+                  class="slider_highlights_element"
+                  src="./assets/png/copenhagen.png"
+                  alt="copenhagen_img"
+                />
+                <div class="slider_text">
+                  <p class="headline">
+                    Copenhagen in 3 Days: Big Experiences, Smart Spending
+                  </p>
+                  <p>
+                    Discover Copenhagen, where historic charm meets modern
+                    design, vibrant cycling culture and waterfront living.
+                  </p>
+                </div>
+              </a>
+
+              <a class="slide" href="article3.html">
+                <img
+                  class="slider_highlights_element"
+                  src="./assets/png/pattaya.png"
+                  alt="pattaya_img"
+                />
+                <div class="slider_text">
+                  <p class="headline">
+                    Pattaya Pulse: Food, Sun and Neon Nights
+                  </p>
+                  <p>
+                    From bustling promenades to nearby islands, the city offers
+                    an energetic and diverse escape. Discover Pattaya City, with
+                    vibrant nightlife and rich cultural landmarks.
+                  </p>
+                </div>
+              </a>
+
+              <a class="slide" href="article2.html">
+                <img
+                  class="slider_highlights_element"
+                  src="./assets/png/fuji.png"
+                  alt="fuji_img"
+                />
+                <div class="slider_text">
+                  <p class="headline">Mountain Fuji</p>
+                  <p>
+                    The most iconic mountain and an active volcano located about
+                    100 kilometers southwest of Tokyo. Written with the
+                    characters for “wealth” and “samurai,” Fuji’s name evokes a
+                    sense of strength, honor, and enduring prestige.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+        </section>
+
+        <section class="faq">
+          <h2>
+            <svg class="svg_large">
+              <use href="./assets/icon/icons.svg#icon-questionmark"></use>
+            </svg>
+            FAQ
+          </h2>
+
+          <ul class="summaries">
+            <details>
+              <summary>
+                What’s the story behind my travel blog?
+                <svg class="svg_medium">
+                  <use href="./assets/icon/icons.svg#icon-arrow"></use>
+                </svg>
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                fuga minus quae ab, amet iste repellat minima unde eum
+                recusandae explicabo impedit provident porro molestiae corporis
+                vero repudiandae similique sunt!
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                How do I plan, document, and share my travels?
+                <svg class="svg_medium">
+                  <use href="./assets/icon/icons.svg#icon-arrow"></use>
+                </svg>
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                accusantium voluptatum debitis id, mollitia, incidunt in placeat
+                aliquid consectetur quis tenetur eos natus nulla exercitationem
+                possimus adipisci delectus. Autem, dignissimos! Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Alias accusantium
+                voluptatum debitis id, mollitia, incidunt in placeat aliquid
+                consectetur quis tenetur eos natus nulla exercitationem possimus
+                adipisci delectus. Autem, dignissimos!
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                How can brands, companies, or fellow creators collaborate with
+                me or get in touch?
+                <svg class="svg_medium">
+                  <use href="./assets/icon/icons.svg#icon-arrow"></use>
+                </svg>
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                alias rerum doloribus dolores fugit id ab explicabo quas
+                eligendi? Dolor iure quod explicabo voluptas, inventore soluta
+                quibusdam eum deleniti nostrum! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Vero alias rerum doloribus dolores
+                fugit id ab explicabo quas eligendi? Dolor iure quod explicabo
+                voluptas, inventore soluta quibusdam eum deleniti nostrum!
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                How can readers support this blog and the work behind it?
+                <svg class="svg_medium">
+                  <use href="./assets/icon/icons.svg#icon-arrow"></use>
+                </svg>
+              </summary>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Excepturi, iure cum. Eveniet hic dolore laborum labore aut
+                consectetur, ea quis harum libero nemo perspiciatis esse sint
+                est voluptatem voluptates modi! Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Excepturi, iure cum. Eveniet hic
+                dolore laborum labore aut consectetur, ea quis harum libero nemo
+                perspiciatis esse sint est voluptatem voluptates modi!
+              </p>
+            </details>
+          </ul>
         </section>
       </section>
-
-            <section class="faq">
-                <h2>
-                    <svg class="svg_large">
-                        <use
-                            href="./assets/icon/icons.svg#icon-questionmark"
-                        ></use>
-                    </svg>
-                    FAQ
-                </h2>
-
-                <ul class="summaries">
-                    <details>
-                        <summary>
-                            What’s the story behind my travel blog?
-                            <svg class="svg_medium">
-                                <use
-                                    href="./assets/icon/icons.svg#icon-arrow"
-                                ></use>
-                            </svg>
-                        </summary>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias fuga minus quae ab, amet iste repellat
-                            minima unde eum recusandae explicabo impedit
-                            provident porro molestiae corporis vero repudiandae
-                            similique sunt!
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            How do I plan, document, and share my travels?
-                            <svg class="svg_medium">
-                                <use
-                                    href="./assets/icon/icons.svg#icon-arrow"
-                                ></use>
-                            </svg>
-                        </summary>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Alias accusantium voluptatum debitis id,
-                            mollitia, incidunt in placeat aliquid consectetur
-                            quis tenetur eos natus nulla exercitationem possimus
-                            adipisci delectus. Autem, dignissimos! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Alias
-                            accusantium voluptatum debitis id, mollitia,
-                            incidunt in placeat aliquid consectetur quis tenetur
-                            eos natus nulla exercitationem possimus adipisci
-                            delectus. Autem, dignissimos!
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            How can brands, companies, or fellow creators
-                            collaborate with me or get in touch?
-                            <svg class="svg_medium">
-                                <use
-                                    href="./assets/icon/icons.svg#icon-arrow"
-                                ></use>
-                            </svg>
-                        </summary>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Vero alias rerum doloribus dolores fugit id ab
-                            explicabo quas eligendi? Dolor iure quod explicabo
-                            voluptas, inventore soluta quibusdam eum deleniti
-                            nostrum! Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Vero alias rerum doloribus dolores
-                            fugit id ab explicabo quas eligendi? Dolor iure quod
-                            explicabo voluptas, inventore soluta quibusdam eum
-                            deleniti nostrum!
-                        </p>
-                    </details>
-
-                    <details>
-                        <summary>
-                            How can readers support this blog and the work
-                            behind it?
-                            <svg class="svg_medium">
-                                <use
-                                    href="./assets/icon/icons.svg#icon-arrow"
-                                ></use>
-                            </svg>
-                        </summary>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Excepturi, iure cum. Eveniet hic dolore
-                            laborum labore aut consectetur, ea quis harum libero
-                            nemo perspiciatis esse sint est voluptatem
-                            voluptates modi! Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Excepturi, iure cum.
-                            Eveniet hic dolore laborum labore aut consectetur,
-                            ea quis harum libero nemo perspiciatis esse sint est
-                            voluptatem voluptates modi!
-                        </p>
-                    </details>
-                </ul>
-            </section>
-        </main>
+    </main>
 
     <footer>
-      <div class="footer-content">
+      <div class="footer_content">
         <section class="copyright_section">
-        <a href="./impressum.html">Imprint</a>
-        <p>Cookie Preferences</p>
-        <p class="copyright">
-          <svg class="svg_small">
-            <use
-              class="icon_copyright"
-              href="./assets/icon/icons.svg#icon-copyright"
-            ></use>
-          </svg>
-          Travel Blog 2026
-        </p>
-      </section>
+          <a href="./impressum.html">Imprint</a>
+          <p>Cookie Preferences</p>
+          <p class="copyright">
+            <svg class="svg_small">
+              <use
+                class="icon_copyright"
+                href="./assets/icon/icons.svg#icon-copyright"
+              ></use>
+            </svg>
+            Travel Blog 2026
+          </p>
+        </section>
 
         <section class="social_media_logo">
           <a target="_blank" href="https://www.tiktok.com/">
@@ -300,31 +315,5 @@
         </section>
       </div>
     </footer>
-
-    <nav>
-      <a target="_self" href="./index.html">
-        <svg class="svg_large">
-          <use href="./assets/icon/icons.svg#icon-home"></use>
-        </svg>
-      </a>
-
-      <a href="#highlights">
-        <svg class="svg_large">
-          <use href="./assets/icon/icons.svg#icon-rocket"></use>
-        </svg>
-      </a>
-
-      <a href="#faq">
-        <svg class="svg_large">
-          <use href="./assets/icon/icons.svg#icon-questionmark"></use>
-        </svg>
-      </a>
-
-      <a href="./impressum.html">
-        <svg class="svg_large" >
-          <use href="./assets/icon/icons.svg#icon-person"></use>
-        </svg>
-      </a>
-    </nav>
   </body>
 </html>
