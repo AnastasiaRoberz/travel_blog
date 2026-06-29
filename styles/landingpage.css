@@ -3,6 +3,19 @@ main {
   padding-bottom: 80px;
 }
 
+.landingpage_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+  width: 100%;
+  max-width: 1440px;
+
+  padding: 0 var(--contentbegrenzung_landingpage);
+}
+
 .hero {
   width: 100%;
   max-width: 1440px;
@@ -35,7 +48,6 @@ main {
   align-items: center;
   flex-direction: column;
 
-  padding: 0px var(--contentbegrenzung_landingpage);
   gap: 32px;
 
   .highlights_head {
@@ -197,8 +209,6 @@ main {
   align-items: center;
 
   gap: 32px;
-
-  padding: 0px var(--contentbegrenzung_landingpage);
 
   .summaries {
     width: 100%;
