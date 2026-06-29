@@ -1,4 +1,17 @@
 @media screen and (max-width: 480px) {
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 193px !important;
+        }
+    }
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 193px !important;
+            padding: 0px 20px;
+        }
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -19,15 +32,26 @@
         line-clamp: 3;
         -webkit-box-orient: vertical;
     }
+    .list {
+        .article_text li {
+            margin-left: 5vw;
+        }
+    }
+    .article_2 {
+        .iframe_wrapper {
+            width: 100% !important;
+            height: 250px !important;
+            padding: 0px 30px;
+        }
+    }
 }
 
-
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-    article {
+    .article_2 {
         .iframe_wrapper {
             width: 600px !important;
             height: 300px !important;
-            margin: 88px 135px;
+            margin: 20px;
         }
     }
     .article_head {
@@ -56,16 +80,21 @@
     .protippCard {
         padding: 26px 16px 24px 16px;
     }
+    .list {
+        .article_text li {
+            margin-left: 3vw;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
-    article {
+    .article_2 {
         max-width: 1440px;
         width: 100%;
         .iframe_wrapper {
             width: 931px !important;
             height: 520px !important;
-            margin: 88px 135px;
+            margin: 50px
         }
     }
     .article_head {
@@ -76,7 +105,7 @@
             gap: 20px;
             max-width: 1440px;
             width: 100%;
-             .info-div {
+            .info-div {
                 width: 75%;
                 height: fit-content;
             }
@@ -86,16 +115,21 @@
         }
     }
     .author_card {
-          width: 25%;
+        width: 25%;
         height: fit-content;
         margin-top: unset;
     }
     .p-top {
-        padding: 88px 33px;
+        padding: 88px 33px 34vh;
         max-width: 1440px;
         width: 100%;
     }
     .protippCard {
         padding: 26px 16px 24px 16px;
+    }
+    .list {
+        .article_text li {
+            margin-left: 3vw;
+        }
     }
 }
