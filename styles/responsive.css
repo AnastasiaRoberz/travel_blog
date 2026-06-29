@@ -65,6 +65,60 @@
         }
     }
 
+    .article3 {
+        .rain-periods {
+            padding: 88px 0px;
+
+            h4 {
+                padding-bottom: 24px;
+            }
+
+            img {
+                width: 640px;
+                height: 436px;
+            }
+        }
+
+        .diagrams_bottom {
+            display: flex;
+            align-items: flex-end;
+            gap: 80px;
+            width: 100%;
+
+            padding: 88px 40px;
+
+            .beach-activities {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+
+            .expenses {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+            .text_expenses {
+                display: flex;
+                flex-direction: column;
+
+                gap: 24px;
+            }
+        }
+    }
+
     footer {
         padding: 60px clamp(60px, 8dvw, 100px);
 
@@ -143,6 +197,60 @@
         width: auto;
     }
 
+    .article3 {
+        .rain-periods {
+            padding: 88px 0px;
+
+            h4 {
+                padding-bottom: 24px;
+            }
+
+            img {
+                width: 640px;
+                height: 436px;
+            }
+        }
+
+        .diagrams_bottom {
+            display: flex;
+            align-items: flex-end;
+            gap: 80px;
+            width: 100%;
+
+            padding: 88px 40px;
+
+            .beach-activities {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+
+            .expenses {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+            .text_expenses {
+                display: flex;
+                flex-direction: column;
+
+                gap: 24px;
+            }
+        }
+    }
+
     footer {
         padding: 60px 120px;
 
@@ -211,6 +319,60 @@
                 text-decoration: underline;
                 text-decoration-color: rgba(241, 201, 83, 1);
                 scale: 1.05;
+            }
+        }
+    }
+
+    .article3 {
+        .rain-periods {
+            padding: 88px 0px;
+
+            h4 {
+                padding-bottom: 24px;
+            }
+
+            img {
+                width: 640px;
+                height: 436px;
+            }
+        }
+
+        .diagrams_bottom {
+            display: flex;
+            align-items: flex-end;
+            gap: 80px;
+            width: 100%;
+
+            padding: 88px 40px;
+
+            .beach-activities {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+
+            .expenses {
+                height: 730px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                img {
+                    width: 519px;
+                    height: 471px;
+                }
+            }
+            .text_expenses {
+                display: flex;
+                flex-direction: column;
+
+                gap: 24px;
             }
         }
     }
