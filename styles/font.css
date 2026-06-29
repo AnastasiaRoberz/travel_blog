@@ -108,7 +108,7 @@ h3 {
 
 h4 {
   font-family: 'Arima';
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1.18rem, 3vw, 2rem);
   line-height: 120%;
   font-weight: 600;
   color: var(--braun);
