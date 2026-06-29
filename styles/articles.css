@@ -214,7 +214,6 @@ main {
 
     h4 {
         text-align: center;
-        font-size: 1.25rem;
     }
 
     img {
@@ -238,6 +237,7 @@ main {
             height: 183px;
         }
     }
+
     .beach-activities {
         padding: 32px 0px;
 

@@ -104,7 +104,7 @@ h3 {
 
 h4 {
     font-family: "Arima";
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 3vw, 2rem);
     font-weight: 600;
     color: var(--braun);
 }
@@ -112,6 +112,14 @@ h4 {
 p {
     font-family: "Palanquin";
     font-size: 1rem;
+    font-weight: 400;
+    color: var(--braun);
+}
+
+.article_text {
+    font-family: "Palanquin";
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 120%;
     font-weight: 400;
     color: var(--braun);
 }
