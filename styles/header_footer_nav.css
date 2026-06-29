@@ -1,119 +1,122 @@
 header {
-    background: var(--türkis);
-    height: 70px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 7px 0px;
+  background: var(--türkis);
+  height: clamp(70px, 10vw, 128px);
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-  img {
-    height: 56px;
-    width: 56px;
+  .header_wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px var(--contentbegrenzung_landingpage);
+    margin-left: 28px;
+  }
+
+  .header_wrapper a img {
+    display: block;
+    width: clamp(56px, 7dvw, 72px);
+    height: auto;
   }
 }
 
-body {
-    height: 100dvh;
-    padding-bottom: 8dvh;
+nav {
+  z-index: 3;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 88px;
+  width: 100%;
+  background-color: var(--gelb);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .nav_wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px var(--contentbegrenzung_landingpage);
+
+    width: 100%;
+    max-width: 1440px;
+
+    .svg_large {
+      fill: var(--türkis);
+    }
+
+    .nav_text {
+      display: flex;
+      font-family: "Arima";
+      font-weight: 700;
+      font-size: clamp(20px, 2dvw, 24px);
+      color: var(--offwhite);
+    }
+
+    .nav_text:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--gelb);
+      scale: 1.05;
+    }
+
+    .nav_text:visited {
+      text-decoration-color: var(--gelb);
+    }
+  }
 }
 
 footer {
-    height: clamp(134px, 10dvh, 152px);
-    width: 100%;
-    background: var(--türkis);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: clamp(134px, 10.7dvw, 152px);
+  background: var(--türkis);
 
+  .footer_content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 
-    padding: 30px 24px;
-
-    a {
-        font-size: 1rem;
-        font-family: "Palanquin";
-        font-weight: 400;
-        line-height: 120%;
-        color: white;
-    }
-
-    p {
-        line-height: 120%;
-        color: white;
-    }
-
-    .footer_content {
-        width: 100%;
-
-        display: flex;
-        justify-content: space-between;
-
-        /* padding: 30px 20px; */
-
-        .copyright_section {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-
-            .copyright_logo {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 4px;
-
-                p {
-                    font-size: 1rem;
-                }
-
-                img {
-                    height: 20px;
-                    width: 20px;
-                }
-            }
-        }
-
-        .social_media_logo {
-            width: 45%;
-            max-width: 190px;
-
-            display: flex;
-            justify-content: space-between;
-
-            padding-top: 50px;
-
-            img {
-                height: clamp(24px, 4dvh, 32px);
-                width: clamp(24px, 4dvw, 32px);
-            }
-            .youtubeimg {
-                height: clamp(24px, 4dvh, 32px);
-                width: clamp(32px, 5dvw, 44px);
-            }
-        }
-    }
-}
-
-.nav_mobile {
-    z-index: 3;
-
-    height: 88px;
     width: 100%;
-    background-color: var(--gelb);
+    max-width: 1440px;
 
-    position: sticky;
-    bottom: 0;
+    padding: 0 var(--contentbegrenzung_landingpage);
 
-    .nav-links {
-        height: 100%;
-        width: 100%;
+    .copyright_section {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
 
-        display: flex;
-        justify-content: space-between;
-        padding: 24px 35px;
-
-        img {
-            height: 40px;
-            width: 40px;
-        }
+      p,
+      a {
+        font-family: "Palanquin";
+        font-size: clamp(1rem, 1.2vw, 1.125rem);
+        line-height: 120%;
+        font-weight: 400;
+        color: white;
+      }
     }
+
+    .copyright {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .icon_copyright {
+      fill: white;
+    }
+
+    .social_media_logo {
+      display: flex;
+      gap: 16px;
+
+      .svg_youtube {
+        width: clamp(32px, 3.06vw, 44px);
+        height:  clamp(24px, 2.25vw, 32px);
+      }
+    }
+  }
 }

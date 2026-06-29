@@ -1,0 +1,219 @@
+@media screen and (max-width: 1024px) {
+  body {
+    padding-bottom: 88px;
+  }
+  nav .nav_wrapper .nav_text {
+    display: none;
+  }
+
+  .headline_hero {
+    display: none;
+  }
+
+  .highlights_head p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+
+  header {
+    justify-content: center;
+
+    .header_wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 102px;
+
+      width: 100%;
+
+      a img {
+        height: 72px;
+        width: 72px;
+      }
+    }
+
+    nav {
+      position: static;
+      height: auto;
+      background-color: transparent;
+
+      justify-content: flex-start;
+      gap: 72px;
+
+      .nav_wrapper {
+        justify-content: flex-start;
+        gap: 72px;
+        padding: 0;
+      }
+
+      .nav_icon {
+        display: none;
+      }
+    }
+  }
+
+  .article_head {
+    display: flex;
+      flex-direction: row;
+      gap: 20px;
+
+.heading_wrapper {
+  width: 75%;
+}
+  }
+
+  .author_card {
+    height: 389px;
+    width: 272px;
+  }
+
+  footer .footer_content .copyright_section {
+    flex-direction: row-reverse;
+    gap: 72px;
+
+    .cookies {
+      order: -1;
+    }
+  }
+
+  /* .beach_destinations {
+    display: flex;
+    flex-direction: center;
+    .carousel {
+      overflow: visible;
+      height: 480px;
+      width: 100%;
+      max-width: 1440px;
+
+      .slider_control {
+        display: none;
+      }
+
+      .cards {
+        position: static;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        padding: 40px 0;
+
+        img {
+          height: 440px;
+          width: 300px;
+          transform: perspective(400px) rotateY(25deg) translateX(5px) !important;
+          transform-origin: 50% 50%;
+          z-index: 2;
+        }
+
+        img:first-child {
+          margin-left: 0;
+        }
+
+        #element_card1:checked ~ .cards img:nth-child(1) {
+        }
+        transform: perspective(400px) rotateY(25deg) translateX(5px);
+        transform-origin: 50% 50%;
+        z-index: 1;
+      }
+
+      img:hover {
+        transform: perspective(600px) rotateY(0deg) scale(1.2) !important;
+        z-index: 10; /* Absolut im Vordergrund */
+  /* box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
+
+        img:hover ~ .cards img:nth-child(1) ~ img,
+        img:hover ~ .cards img:nth-child(2) ~ img,
+        img:hover ~ .cards img:nth-child(3) ~ img,
+        img:hover ~ .cards img:nth-child(4) ~ img {
+          transform: perspective(400px) rotateY(-25deg) translateX(-5px);
+        }
+
+        /* Schafft ein bisschen Platz links und rechts zur nächsten schrägen Karte */
+  /* margin-left: -50px;
+        margin-right: 50px;
+      }
+
+      /* C) KARTEN, DIE LINKS VON DER GEHOVERTEN MAUS LIEGEN:
+              Sie klappen flach auf (wie in den Figma-Zeilen 2-6 zu sehen!) */
+  /* img:hover ~ img {
+        /* Bleiben schräg nach rechts geklappt, rutschen aber ein Stück nach hinten */
+  /* transform: perspective(600px) rotateY(-25deg) scale(0.9);
+        z-index: 1;
+      }
+    }
+  } */
+
+  .beach_destinations {
+    width: 100%;
+    max-width: 1440px;
+    padding: 88px var(--contentbegrenzung_landingpage);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+
+    input {
+      display: none;
+    }
+
+    .carousel {
+      height: auto;
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+
+      .cards {
+        height: 520px;
+        width: 100%;
+        max-width: 1440px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(120px);
+
+        .carousel_img {
+          width: 300px;
+          height: 440px;
+          object-fit: cover;
+          border-radius: 16px;
+
+          transform: perspective(300px) rotateY(15deg) translateX(-120px)
+            scale(0.9);
+          transform-origin: 50% 50%;
+
+          margin-right: -100px;
+          margin-left: 0px;
+
+          box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+
+          transition: var(--transition_slider);
+        }
+      }
+
+      .carousel_img:hover {
+        transform: perspective(300px) rotateY(0deg) translateX(0px) scale(1.2);
+        z-index: 2;
+      }
+
+      .carousel_img:hover ~ .carousel_img {
+        transform: perspective(300px) rotateY(-15deg) translateX(120px)
+          scale(0.9);
+        z-index: 2;
+      }
+    }
+  }
+}

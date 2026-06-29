@@ -1,111 +1,119 @@
 .article_head {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  .heading_wrapper {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 40px;
+  }
 
-    .heading {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-wrap: wrap;
 
-        .sub_heading {
-            font-family: Palanquin;
-            color: var(--türkis);
-            font-weight: 600;
-            font-size: clamp(1.25rem, 2.5vw, 2.5rem);
-            line-height: 120%;
-        }
-
-        .prolog {
-            font-family: Palanquin;
-            font-weight: 400;
-            font-size: clamp(1.13rem, 2.2vw, 2rem);
-            line-height: 120%;
-            color: var(--braun);
-        }
+    .sub_heading {
+      font-family: Palanquin;
+      color: var(--türkis);
+      font-weight: 600;
+      font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+      line-height: 120%;
     }
+
+    .prolog {
+      font-family: Palanquin;
+      font-weight: 400;
+      font-size: clamp(1.13rem, 2.2vw, 2rem);
+      line-height: 120%;
+      color: var(--braun);
+    }
+  }
 }
 
 .article_details {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+
+  p {
+    font-family: Palanquin;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: var(--braun);
+
     display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 8px 16px;
+    align-items: center;
+    gap: 6px;
 
-    p {
-        font-family: Palanquin;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 120%;
-        color: var(--braun);
-
-        display: flex;
-        align-items: center;
-        gap: 6px;
-
-        .date_icon {
-            width: 16px;
-            height: 18px;
-            fill: var(--türkis);
-        }
-
-        .reading_time_icon {
-            width: 20px;
-            height: 7px;
-            fill: var(--türkis);
-        }
-
-        .read_icon {
-            width: 20px;
-            height: 14px;
-            fill: var(--türkis);
-        }
-
-        .shared_icon {
-            width: 16px;
-            height: 18px;
-            fill: var(--türkis);
-        }
+    .date_icon {
+      width: 16px;
+      height: 18px;
+      fill: var(--türkis);
     }
+
+    .reading_time_icon {
+      width: 20px;
+      height: 7px;
+      fill: var(--türkis);
+    }
+
+    .read_icon {
+      width: 20px;
+      height: 14px;
+      fill: var(--türkis);
+    }
+
+    .shared_icon {
+      width: 16px;
+      height: 18px;
+      fill: var(--türkis);
+    }
+  }
 }
 
 .author_card {
-    background-color: var(--türkisLight);
-    padding: 16px 8px;
-    text-align: center;
-    border-radius: 30px;
+  background-color: var(--türkisLight);
+  padding: 16px 8px;
+  text-align: center;
+  border-radius: 30px;
 
-    img {
-        width: 120px;
-        aspect-ratio: 1 / 1;
-        border-radius: 50%;
-        object-fit: cover;
-        object-position: 75% center;
+  img {
+    width: 120px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 75% center;
 
-        margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
+  }
 
-    .name {
-        font-family: Arima;
-        font-size: clamp(1rem, 1.2vw, 1.3rem);
-        font-weight: 700;
-        color: var(--braun);
-    }
+  .name {
+    font-family: Arima;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    font-weight: 700;
+    color: var(--braun);
+  }
 
-    .job_title {
-        font-family: Arima;
-        font-weight: 400;
-        font-size: clamp(1rem, 1.2vw, 1.3rem);
-        line-height: 120%;
-        color: var(--braun);
-        margin-bottom: 8px;
-    }
+  .job_title {
+    font-family: Arima;
+    font-weight: 400;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    line-height: 120%;
+    color: var(--braun);
+    margin-bottom: 8px;
+  }
 
-    p {
-        font-family: Palanquin;
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 120%;
-        color: var(--braun);
-    }
+  p {
+    font-family: Palanquin;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: var(--braun);
+  }
 }
