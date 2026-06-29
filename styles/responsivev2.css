@@ -22,6 +22,10 @@
     min-height: 100dvh;
   }
 
+  main {
+    flex: 1;
+  }
+
   header {
     justify-content: center;
 
@@ -82,76 +86,6 @@
       order: -1;
     }
   }
-
-  /* .beach_destinations {
-    display: flex;
-    flex-direction: center;
-    .carousel {
-      overflow: visible;
-      height: 480px;
-      width: 100%;
-      max-width: 1440px;
-
-      .slider_control {
-        display: none;
-      }
-
-      .cards {
-        position: static;
-        top: 0;
-        left: 0;
-        margin-left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: auto;
-        padding: 40px 0;
-
-        img {
-          height: 440px;
-          width: 300px;
-          transform: perspective(400px) rotateY(25deg) translateX(5px) !important;
-          transform-origin: 50% 50%;
-          z-index: 2;
-        }
-
-        img:first-child {
-          margin-left: 0;
-        }
-
-        #element_card1:checked ~ .cards img:nth-child(1) {
-        }
-        transform: perspective(400px) rotateY(25deg) translateX(5px);
-        transform-origin: 50% 50%;
-        z-index: 1;
-      }
-
-      img:hover {
-        transform: perspective(600px) rotateY(0deg) scale(1.2) !important;
-        z-index: 10; /* Absolut im Vordergrund */
-  /* box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.35);
-
-        img:hover ~ .cards img:nth-child(1) ~ img,
-        img:hover ~ .cards img:nth-child(2) ~ img,
-        img:hover ~ .cards img:nth-child(3) ~ img,
-        img:hover ~ .cards img:nth-child(4) ~ img {
-          transform: perspective(400px) rotateY(-25deg) translateX(-5px);
-        }
-
-        /* Schafft ein bisschen Platz links und rechts zur nächsten schrägen Karte */
-  /* margin-left: -50px;
-        margin-right: 50px;
-      }
-
-      /* C) KARTEN, DIE LINKS VON DER GEHOVERTEN MAUS LIEGEN:
-              Sie klappen flach auf (wie in den Figma-Zeilen 2-6 zu sehen!) */
-  /* img:hover ~ img {
-        /* Bleiben schräg nach rechts geklappt, rutschen aber ein Stück nach hinten */
-  /* transform: perspective(600px) rotateY(-25deg) scale(0.9);
-        z-index: 1;
-      }
-    }
-  } */
 
   .beach_destinations {
     width: 100%;
