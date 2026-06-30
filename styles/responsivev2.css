@@ -3,23 +3,8 @@
     padding-bottom: 88px;
   }
 
-  nav .nav_wrapper .nav_text {
-    display: none;
-  }
-
-  .list {
-  width: 100%;
-  padding: 0px clamp(50px, calc(-73.077px + 12.019vw), 100px);
-
-  ol {
-    margin-left: 24px;
-  }
-}
-
-  .headline_hero {
-    display: none;
-  }
-
+  nav .nav_wrapper .nav_text,
+  .headline-hero,
   .highlights_head p {
     display: none;
   }
@@ -153,13 +138,18 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
+@media screen and (min-width: 721px) {
+  .article .pro-tipps,
+  .article .list {
+    padding: 0px clamp(0px, calc(-100.278px + 13.908vw), 100px);
   }
 
+  
+
+  
+}
+
+@media screen and (min-width: 1025px) {
   main {
     flex: 1;
   }
@@ -203,7 +193,7 @@
   }
 
   .article_head {
-    .res_article_head {
+    .info-div {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -215,75 +205,6 @@
     info-div {
       width: 20%;
       height: fit-content;
-    }
-  }
-
-  /* .article_head {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-        .heading_wrapper {
-            width: 75%;
-        }
-    }
-
-    .author_card {
-        height: 389px;
-        width: 272px;
-    } */
-
-  .article3 {
-    .rain-periods {
-      padding: 88px 0px;
-
-      h4 {
-        padding-bottom: 24px;
-      }
-
-      img {
-        width: 640px;
-        height: 436px;
-      }
-    }
-
-    .diagrams_bottom {
-      display: flex;
-      align-items: flex-end;
-      gap: 80px;
-      width: 100%;
-
-      padding: 88px 40px;
-
-      .beach-activities {
-        height: 730px;
-        padding: 0;
-        gap: 0;
-        justify-content: space-between;
-
-        img {
-          width: 519px;
-          height: 471px;
-        }
-      }
-
-      .expenses {
-        height: 730px;
-        padding: 0;
-        gap: 0;
-        justify-content: space-between;
-
-        img {
-          width: 519px;
-          height: 471px;
-        }
-      }
-      .text_expenses {
-        display: flex;
-        flex-direction: column;
-
-        gap: 24px;
-      }
     }
   }
 
@@ -299,7 +220,7 @@
   .beach_destinations {
     width: 100%;
     max-width: 1440px;
-    padding: 88px var(--contentbegrenzung_landingpage);
+    padding: 0px var(--contentbegrenzung_landingpage);
 
     display: flex;
     flex-direction: column;
@@ -358,5 +279,29 @@
         z-index: 2;
       }
     }
+  }
+  
+  #article-3 .diagrams-bottom {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  #article-3 .beach-activities {
+    height: 730px;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  #article-3 .expenses {
+    height: 730px;
+    padding: 0;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  #article-3 .text-expenses {
+    display: flex;
+    flex-direction: column;
   }
 }
