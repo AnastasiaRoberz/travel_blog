@@ -1,68 +1,3 @@
-@media screen and (max-width: 600px) {
-    .hero {
-        .yellow_swirl {
-            /* height: 540px; */
-            background: url(../assets/png/swirl_mobile.svg);
-            /* background-position-y: center; */
-            background-repeat: no-repeat;
-            /* background-size: contain; */
-
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            padding: 0 var(--contentbegrenzung_landingpage);
-
-            position: relative;
-        }
-
-        .yellow_swirl img {
-            width: 160px;
-            height: auto;
-            transform: translate(50px, -55px);
-
-            position: absolute;
-        }
-
-        .headline_hero {
-            display: none;
-        }
-    }
-}
-
-@media screen and (min-width: 601px) and (max-width: 1023px) {
-    .hero {
-        .yellow_swirl {
-            /* height: 540px; */
-            /* background: url(../assets/png/swirl_tablet.svg); */
-            background-position-x: left;
-            /* background-position-y: center; */
-            background-repeat: no-repeat;
-            /* background-size: contain; */
-
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-
-            padding: 0 var(--contentbegrenzung_landingpage);
-
-            position: relative;
-        }
-
-        .yellow_swirl img {
-            width: 160px;
-            height: auto;
-            transform: translate(50px, -55px);
-
-            position: absolute;
-        }
-
-        .headline_hero {
-            display: none;
-        }
-    }
-}
-
 @media screen and (max-width: 1024px) {
     body {
         padding-bottom: 88px;
@@ -70,6 +5,12 @@
 
     nav .nav_wrapper .nav_text {
         display: none;
+    }
+
+    .hero {
+        .headline_hero {
+            display: none;
+        }
     }
 
     .highlights_head p {
