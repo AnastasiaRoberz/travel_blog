@@ -56,7 +56,7 @@ main {
     height: 160px;
 
     position: absolute;
-    right: 5px;
+    right: clamp(0px, calc(-12.286px + 3.839vw), 43px);
     bottom: clamp(18px, calc(-4.286px + 6.964vw), 96px);
   }
 
