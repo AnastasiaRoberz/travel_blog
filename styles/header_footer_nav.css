@@ -55,15 +55,16 @@ nav {
       color: var(--offwhite);
     }
 
-    .nav_text:hover {
+    nav a:visited {
+      color: var(--gelb);
+    }
+
+    nav a:hover {
       text-decoration: underline;
       text-decoration-color: var(--gelb);
       scale: 1.05;
     }
 
-    .nav_text:visited {
-      text-decoration-color: var(--gelb);
-    }
   }
 }
 
