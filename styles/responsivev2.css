@@ -139,7 +139,27 @@
 @media screen and (min-width: 721px) {
   article .pro-tipps,
   article .list {
-    padding: 0px clamp(0px, calc(-100.278px + 13.908vw), 100px);
+    padding: 20px clamp(0px, calc(-100.278px + 13.908vw), 100px);
+  }
+
+  .article-head {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 27px;
+
+    align-items: stretch;
+
+    .info-div {
+      flex: 1;
+    }
+
+    .author-card {
+      width: clamp(240px, calc(7.23vw + 187.86px), 292px);
+
+      .article_text {
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -182,21 +202,7 @@
     }
   }
 
-  .article-head {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 27px;
 
-    align-items: stretch;
-
-    .info-div {
-      width: 75%;
-    }
-
-    .author-card {
-      width: 25%;
-    }
-  }
 
   /* .article3 {
         .rain-periods {
@@ -261,7 +267,7 @@
     }
   }
 
-  .beach_destinations {
+  #article-1 .beach_destinations {
     width: 100%;
     max-width: 1440px;
     padding: 0px clamp(0px, calc(-123.494px + 12.048vw), 50px);
@@ -277,7 +283,6 @@
     }
 
     .carousel {
-      height: auto;
       width: 100%;
       max-width: 1440px;
       display: flex;
@@ -348,9 +353,3 @@
     flex-direction: column;
   }
 }
-
-/* @media screen and (min-width: 1441px) {
-    main {
-        padding: 0px max(120px, calc(50% - 720px));
-    
-} }*/
