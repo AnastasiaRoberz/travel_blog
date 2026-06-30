@@ -142,6 +142,29 @@
             }
         }
     }
+
+    .article_3 {
+        .diagrams-bottom {
+            .beach-activities {
+                img {
+                    object-fit: cover;
+                    aspect-ratio: 1 / 1;
+                    /* width: clamp(290px, calc(224.571px + 20.446vw), 519px); */
+                    width: auto;
+                    height: clamp(263.18px, calc(203.803px + 18.555vw), 471px);
+                }
+            }
+
+            .expenses {
+                img {
+                    aspect-ratio: 1 / 1;
+                    /* width: clamp(290px, calc(224.571px + 20.446vw), 519px); */
+                    width: auto;
+                    height: clamp(263.18px, calc(203.803px + 18.555vw), 471px);
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 721px) {
@@ -222,8 +245,11 @@
         }
     }
 
-    .article3 {
-        .rain-periods {
+    .article_3 {
+        /* padding: 0px clamp(0px, calc(-100.278px + 13.908vw), 100px); */
+        gap: 88px;
+
+        /* .rain-periods {
             padding: 88px 0px;
 
             h4 {
@@ -234,15 +260,13 @@
                 width: 640px;
                 height: 436px;
             }
-        }
+        } */
 
         .diagrams_bottom {
-            display: flex;
-            align-items: flex-end;
-            gap: 80px;
-            width: 100%;
-
-            padding: 88px 40px;
+            /* .diagrams-text {
+                height: 240px;
+                width: 520px;
+            } */
 
             .beach-activities {
                 height: 730px;
@@ -251,8 +275,9 @@
                 justify-content: space-between;
 
                 img {
-                    width: 519px;
-                    height: 471px;
+                    /* width: 519px; */
+                    width: auto;
+                    height: clamp(311px, 20dvh, 471px);
                 }
             }
 
@@ -263,8 +288,9 @@
                 justify-content: space-between;
 
                 img {
-                    width: 519px;
-                    height: 471px;
+                    /* width: 519px; */
+                    width: auto;
+                    height: clamp(311px, 20dvh, 471px);
                 }
             }
             .text_expenses {
@@ -350,28 +376,55 @@
         }
     }
 
-    #article-3 .diagrams-bottom {
-        flex-direction: row;
-        width: 100%;
-    }
+    .article_3 {
+        .diagrams-bottom {
+            height: 727px;
+            max-width: 1118px;
 
-    #article-3 .beach-activities {
-        height: 730px;
-        padding: 0;
-        gap: 0;
-        justify-content: space-between;
-    }
+            flex-direction: row;
+            width: 100%;
 
-    #article-3 .expenses {
-        height: 730px;
-        padding: 0;
-        gap: 0;
-        justify-content: space-between;
-    }
+            align-items: flex-end;
+            gap: 80px;
 
-    #article-3 .text-expenses {
-        display: flex;
-        flex-direction: column;
+            padding: 0 40px;
+
+            .diagrams-text {
+                /* height: 240px;
+                width: 519px; */
+            }
+
+            .beach-activities {
+                height: 730px;
+                width: 519px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                /* img {
+                    width: 519px;
+                    height: 471px;
+                } */
+            }
+
+            .expenses {
+                height: 730px;
+                width: 519px;
+                padding: 0;
+                gap: 0;
+                justify-content: space-between;
+
+                /* img {
+                    width: 519px;
+                    height: 471px;
+                } */
+            }
+
+            .text-expenses {
+                display: flex;
+                flex-direction: column;
+            }
+        }
     }
 }
 
