@@ -2,7 +2,7 @@ main {
   max-width: 1440px;
   padding: clamp(24px, 5.5vw, 80px) var(--contentbegrenzung_articles);
   margin-bottom: calc((clamp(24px, 5.5vw, 80px)) * 2);
-  gap: clamp(40px, calc(26.286px + 4.286vw), 88px);
+  gap: clamp(40px, calc(37.714px + 0.714vw), 48px);
 }
 
 .list {
@@ -10,8 +10,9 @@ main {
   flex-direction: column;
   gap: 24px;
 
-  ol {
-    margin-left: 42px;
+  ol,
+  ul {
+    margin-left: 24px;
 
     li {
       padding-left: 8px;
@@ -27,7 +28,13 @@ article {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: clamp(24px, calc(21.714px + 0.714vw), 32px);
+  gap: clamp(32px, calc(16px + 5vw), 88px);
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, calc(21.714px + 0.714vw), 32px);
+  }
 }
 
 #article-2 {
@@ -52,15 +59,11 @@ article {
     box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
   }
 
-  h4 {
-    margin-top: clamp(24px, calc(21.714px + 0.714vw), 32px);
-  }
-
   .rain-periods {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: clamp(24px, calc(21.714px + 0.714vw), 32px);
+    gap: 24px;
 
     img {
       width: clamp(290px, calc(190px + 31.25vw), 640px);
@@ -71,11 +74,13 @@ article {
   .diagrams-bottom {
     display: flex;
     flex-direction: column;
-    gap: clamp(24px, calc(21.714px + 0.714vw), 32px);
-
+    gap: clamp(32px, calc(-86.154px + 11.538vw), 80px);
+    
     .diagrams-text {
       display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
       gap: clamp(16px, calc(13.714px + 0.714vw), 24px);
     }
 
@@ -89,6 +94,10 @@ article {
       img {
         width: clamp(290px, calc(224.571px + 20.446vw), 519px);
         height: clamp(263.18px, calc(203.803px + 18.555vw), 471px);
+      }
+
+      p {
+        text-align: left;
       }
     }
 

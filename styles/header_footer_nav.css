@@ -46,25 +46,25 @@ nav {
     .svg_large {
       fill: var(--türkis);
     }
-
-    .nav_text {
-      display: flex;
-      font-family: "Arima";
-      font-weight: 700;
-      font-size: clamp(20px, 2dvw, 24px);
-      color: var(--offwhite);
-    }
-
-    .nav_text:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--gelb);
-      scale: 1.05;
-    }
-
-    .nav_text:visited {
-      text-decoration-color: var(--gelb);
-    }
   }
+}
+
+nav a {
+  display: flex;
+  font-family: "Arima";
+  font-weight: 700;
+  font-size: clamp(20px, 2dvw, 24px);
+  color: var(--offwhite);
+}
+
+nav a:visited {
+  color: var(--gelb);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--gelb);
+  scale: 1.05;
 }
 
 footer {
@@ -78,7 +78,7 @@ footer {
   .footer_content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     width: 100%;
     max-width: 1440px;
@@ -116,7 +116,7 @@ footer {
 
       .svg_youtube {
         width: clamp(32px, 3.06vw, 44px);
-        height:  clamp(24px, 2.25vw, 32px);
+        height: clamp(24px, 2.25vw, 32px);
       }
     }
   }
