@@ -10,9 +10,8 @@ main {
   flex-direction: column;
   gap: 24px;
 
-  ol,
-  ul {
-    margin-left: 24px;
+  ol {
+    margin-left: 42px;
 
     li {
       padding-left: 8px;
@@ -24,7 +23,7 @@ main {
   }
 }
 
-.article {
+article {
   width: 100%;
   display: flex;
   flex-direction: column;
