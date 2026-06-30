@@ -1,46 +1,45 @@
-.protippCard {
-    background-color: var(--türkisLight);
-    padding: 24px 16px;
-    text-align: left;
-    border-radius: 30px;
-    line-height: 120%;
+.pro-tipps {
+  width: 100%;
+  padding-top: 20px;
 }
-.usefullink {
+
+.protipp-heading {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+
+  width: fit-content;
+
+  transform: translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));
+
+  background-color: var(--türkis);
+  transform: rotate(-13.67deg) translateX(clamp(-50px, calc(-4.46vw + 14.29px), 0px));;
+  border-radius: 10px;
+
+  font-family: "Palanquin";
+  font-size: 28px;
+  line-height: 120%;
+  font-weight: 700;
+  color: var(--gelb);
+
+  svg {
+    height: 42px;
+    width: 43px;
+  }
+}
+
+.protipp-card {
+  width: 100%;
+  padding: 25px 16px;
+  background-color: var(--türkisLight);
+  border-radius: 30px;
+
+  .article_text {
+  margin-left: clamp(15px, calc(13.571px + 0.446vw), 20px);
+  }
+
+  a {
     color: var(--türkis);
-    font-weight: 700;
-}
-.protipps {
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 1.75rem;
-    line-height: 120%;
-    letter-spacing: 0%;
-    color: var(--gelb);
-    padding: 0px 10px 0px 0px;
-}
-.protipps_section {
-    transform: rotate(-13.67deg);
-    justify-content: center;
-    align-items: center;
-    background-color: var(--türkis);
-    width: fit-content;
-    border-radius: 10px;
-    display: flex;
-    img {
-        height: 50px;
-        width: 50px;
-    }
-}
-.p-top{
-    padding-top: 32px;
-}
-ol {
-    text-align: justify;
-    padding: 0px 15px;
-    color: var(--braundark);
-font-weight: 400;
-
-line-height: 120%;
-letter-spacing: 0%;
-
+  }
 }
