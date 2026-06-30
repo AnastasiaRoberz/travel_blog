@@ -19,127 +19,132 @@
     -webkit-box-orient: vertical;
   }
 
-.beach_destinations {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-  max-width: 1440px;
-  margin-bottom: 8px;
-
-  .carousel {
+  .beach_destinations {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 34px;
-
+    gap: clamp(16px, calc(8.727px + 2.273vw), 32px);
     width: 100%;
-    height: 400px;
+    max-width: 1440px;
+    margin-bottom: 8px;
 
-    overflow: hidden;
-    /* position: relative; */
-
-    .cards {
+    .carousel {
       display: flex;
-      width: 1000px;
-      height: 293px;
+      flex-direction: column;
+      align-items: center;
+      gap: 34px;
 
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      margin-left: -100px;
+      width: 100%;
+      height: 400px;
 
-      img {
-        width: 200px;
+      overflow: hidden;
+      /* position: relative; */
+
+      .cards {
+        display: flex;
+        width: 1000px;
         height: 293px;
-        object-fit: cover;
-        border-radius: 16px;
 
-        transform: perspective(250px) rotateY(15deg) translateX(5px) scale(0.9);
-        transform-origin: 50% 50%;
-        z-index: 1;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        margin-left: -100px;
 
-        box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+        img {
+          width: 200px;
+          height: 293px;
+          object-fit: cover;
+          border-radius: 16px;
+
+          transform: perspective(250px) rotateY(15deg) translateX(5px)
+            scale(0.9);
+          transform-origin: 50% 50%;
+          z-index: 1;
+
+          box-shadow: -9px 5px 20px 0px rgba(0, 0, 0, 0.25);
+        }
       }
-    }
 
-    input {
-      display: none;
-    }
+      input {
+        display: none;
+      }
 
-    .slider_control {
-      position: absolute;
-      bottom: 10px;
-      display: flex;
-      gap: 8px;
-      padding: 10px;
+      .slider_control {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
+        gap: 8px;
+        padding: 10px;
 
-      label {
+        label {
+          height: 22px;
+          width: 22px;
+          background: var(--türkisLight);
+          border-radius: 50px;
+          cursor: pointer;
+          transition: var(--transition_slider);
+        }
+      }
+
+      #element_card1:checked ~ .cards {
+        transform: translateX(0px);
+      }
+
+      #element_card2:checked ~ .cards {
+        transform: translateX(-20%);
+      }
+
+      #element_card3:checked ~ .cards {
+        transform: translateX(-40%);
+      }
+
+      #element_card4:checked ~ .cards {
+        transform: translateX(-60%);
+      }
+
+      #element_card5:checked ~ .cards {
+        transform: translateX(-80%);
+      }
+
+      #element_card1:checked ~ .cards img:nth-child(1) ~ img,
+      #element_card2:checked ~ .cards img:nth-child(2) ~ img,
+      #element_card3:checked ~ .cards img:nth-child(3) ~ img,
+      #element_card4:checked ~ .cards img:nth-child(4) ~ img {
+        transform: perspective(250px) rotateY(-15deg) translateX(-5px)
+          scale(0.9);
+      }
+
+      #element_card1:checked ~ .cards img:nth-child(1),
+      #element_card2:checked ~ .cards img:nth-child(2),
+      #element_card3:checked ~ .cards img:nth-child(3),
+      #element_card4:checked ~ .cards img:nth-child(4),
+      #element_card5:checked ~ .cards img:nth-child(5) {
+        transform: perspective(250px) rotateY(0deg) translateX(0px);
+        z-index: 2;
+      }
+
+      #element_card1:checked ~ .slider_control label:nth-child(1),
+      #element_card2:checked ~ .slider_control label:nth-child(2),
+      #element_card3:checked ~ .slider_control label:nth-child(3),
+      #element_card4:checked ~ .slider_control label:nth-child(4),
+      #element_card5:checked ~ .slider_control label:nth-child(5) {
+        width: 40px;
         height: 22px;
-        width: 22px;
-        background: var(--türkisLight);
         border-radius: 50px;
-        cursor: pointer;
-        transition: var(--transition_slider);
+        background: var(--türkis);
+        transition: 250ms ease-in-out;
       }
-    }
-
-    #element_card1:checked ~ .cards {
-      transform: translateX(0px);
-    }
-
-    #element_card2:checked ~ .cards {
-      transform: translateX(-20%);
-    }
-
-    #element_card3:checked ~ .cards {
-      transform: translateX(-40%);
-    }
-
-    #element_card4:checked ~ .cards {
-      transform: translateX(-60%);
-    }
-
-    #element_card5:checked ~ .cards {
-      transform: translateX(-80%);
-    }
-
-    #element_card1:checked ~ .cards img:nth-child(1) ~ img,
-    #element_card2:checked ~ .cards img:nth-child(2) ~ img,
-    #element_card3:checked ~ .cards img:nth-child(3) ~ img,
-    #element_card4:checked ~ .cards img:nth-child(4) ~ img {
-      transform: perspective(250px) rotateY(-15deg) translateX(-5px) scale(0.9);
-    }
-
-    #element_card1:checked ~ .cards img:nth-child(1),
-    #element_card2:checked ~ .cards img:nth-child(2),
-    #element_card3:checked ~ .cards img:nth-child(3),
-    #element_card4:checked ~ .cards img:nth-child(4),
-    #element_card5:checked ~ .cards img:nth-child(5) {
-      transform: perspective(250px) rotateY(0deg) translateX(0px);
-      z-index: 2;
-    }
-
-    #element_card1:checked ~ .slider_control label:nth-child(1),
-    #element_card2:checked ~ .slider_control label:nth-child(2),
-    #element_card3:checked ~ .slider_control label:nth-child(3),
-    #element_card4:checked ~ .slider_control label:nth-child(4),
-    #element_card5:checked ~ .slider_control label:nth-child(5) {
-      width: 40px;
-      height: 22px;
-      border-radius: 50px;
-      background: var(--türkis);
-      transition: 250ms ease-in-out;
     }
   }
 }
-}
 
 @media screen and (min-width: 721px) {
-  article .pro-tipps,
-  article .list {
-    padding: 20px clamp(0px, calc(-100.278px + 13.908vw), 100px);
+  article .pro-tipps {
+    padding: 18px clamp(0px, calc(-100.278px + 13.908vw), 100px) 0px;
+  }
+
+  #article-1 .list {
+    padding: 0px clamp(0px, calc(-100.278px + 13.908vw), 100px);
   }
 
   .article-head {
@@ -202,62 +207,6 @@
     }
   }
 
-
-
-  /* .article3 {
-        .rain-periods {
-            padding: 88px 0px;
-
-            h4 {
-                padding-bottom: 24px;
-            }
-
-            img {
-                width: 640px;
-                height: 436px;
-            }
-        }
-
-        .diagrams_bottom {
-            display: flex;
-            align-items: flex-end;
-            gap: 80px;
-            width: 100%;
-
-            padding: 88px 40px;
-
-            .beach-activities {
-                height: 730px;
-                padding: 0;
-                gap: 0;
-                justify-content: space-between;
-
-                img {
-                    width: 519px;
-                    height: 471px;
-                }
-            }
-
-            .expenses {
-                height: 730px;
-                padding: 0;
-                gap: 0;
-                justify-content: space-between;
-
-                img {
-                    width: 519px;
-                    height: 471px;
-                }
-            }
-            .text_expenses {
-                display: flex;
-                flex-direction: column;
-
-                gap: 24px;
-            }
-        }
-    } */
-
   footer .footer_content .copyright_section {
     flex-direction: row-reverse;
     gap: 72px;
@@ -270,13 +219,13 @@
   #article-1 .beach_destinations {
     width: 100%;
     max-width: 1440px;
-    padding: 0px clamp(0px, calc(-123.494px + 12.048vw), 50px);
+    padding: 40px clamp(0px, calc(-123.494px + 12.048vw), 50px) 0px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 64px;
+    gap: clamp(32px, calc(32832px + -3200vw), 64px);
 
     input {
       display: none;
@@ -289,7 +238,7 @@
       justify-content: center;
 
       .cards {
-        height: 520px;
+        height: 440px;
         width: 100%;
         max-width: 1440px;
 

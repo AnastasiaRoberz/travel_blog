@@ -111,7 +111,7 @@ h4 {
   font-size: clamp(1.18rem, 3vw, 2rem);
   line-height: 120%;
   font-weight: 600;
-  text-align: cen;
+  text-align: center;
   color: var(--braun);
 }
 

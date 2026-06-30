@@ -4,7 +4,8 @@ main {
 
   width: 100%;
   max-width: 1440px;
-  padding: 24px var(--contentbegrenzung_articles);
+  padding: 24px var(--contentbegrenzung_articles) 0px;
+  margin-bottom: calc((clamp(24px, 5.5vw, 80px)) * 2);
 }
 
 h2 {
@@ -16,6 +17,15 @@ h2 {
 h3 {
   font-size: clamp(1.25rem, 3vw, 2rem);
   color: var(--türkis);
+}
+
+#haftung {
+  gap: 16px;
+
+  h4 {
+  text-align: left;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
 }
 
 .impressum_content {
@@ -38,8 +48,4 @@ h3 {
   span {
     font-style: italic;
   }
-}
-
-#haftung {
-  gap: 12px;
 }
