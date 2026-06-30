@@ -28,9 +28,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 
-    position: relative;
-    overflow: hidden;
-
     .yellow_swirl {
         height: 540px;
         background: url(../assets/png/swirl_desktop.svg);
