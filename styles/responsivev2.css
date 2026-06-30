@@ -16,8 +16,10 @@
         }
     }
 
-    .headline_hero {
-        display: none;
+    .hero {
+        .headline_hero {
+            display: none;
+        }
     }
 
     .highlights_head p {
@@ -150,21 +152,6 @@
                 transition: 250ms ease-in-out;
             }
         }
-    }
-    .article-head > .author-card > .author-info > .article_text {
-        text-align: left;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .article-head {
-        display: grid;
-        grid-template-columns: 65% 35%;
-    }
-    .article-head > .author-card > {
-        height: stretch;
-    }
-    .article-head > .author-card > .author-info > .article_text {
-        text-align: left;
     }
 }
 
@@ -367,3 +354,9 @@
         }
     }
 }
+
+/* @media screen and (min-width: 1441px) {
+    main {
+        padding: 0px max(120px, calc(50% - 720px));
+    }
+} */
