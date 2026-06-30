@@ -7,17 +7,6 @@
     --grau: rgb(61, 61, 61);
     --offwhite: rgb(248, 245, 235);
 
-    /* PADDINGS 
-    
-    Rechnung Landingpage:
-    1. Wachstum Bildschirm: 1440px - 320px = 1120px
-    2. Wachstum Padding: 120px - 20px = 100px
-    3. prozentualer Wachstum: (100px / 1120px) * 100 = 8,93%
-
-    Abweichung berechnen:
-    1440px * 8,93% = 128,59px
-    128,59px - 120px = 8,59px
-    */
     --contentbegrenzung_landingpage: clamp(20px, 8.93% - 8.6px, 120px);
     --contentbegrenzung_articles: clamp(15px, 9.375% - 15px, 120px);
 

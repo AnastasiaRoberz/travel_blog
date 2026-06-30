@@ -45,7 +45,7 @@ main {
     height: clamp(299px, calc(230.143px + 21.518vw), 540px);
     width: clamp(359.44px, calc(277.28px + 25.675vw), 647px);
 
-    background: url(../assets/png/swirl_desktop.svg);
+    background: url(../assets/png/swirl.svg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
