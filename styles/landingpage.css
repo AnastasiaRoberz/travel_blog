@@ -272,6 +272,7 @@ main {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 8px;
 
         font-family: "Palanquin";
